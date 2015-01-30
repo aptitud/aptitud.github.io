@@ -4,7 +4,12 @@
 </div>
 <script>
     setBackgroundColor("#3399CC");
-    $.getJSON("http://aptitud-sthlm.tumblr.com/api/read/json?num=1&callback=?", function(result) {
-        $("#blogPage").html(result.posts[0]["regular-body"]);
-    });
+    if (window.blogdata) {
+        $("#blogPage").html(window.blogdata);
+    } else {
+        $.getJSON("http://aptitud-sthlm.tumblr.com/api/read/json?num=1&callback=?", function (result) {
+            window.blogdata = result.posts[0]["regular-body"];
+            $("#blogPage").html(window.blogdata);
+        });
+    }
 </script>
