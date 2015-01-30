@@ -4,6 +4,10 @@ body {
     color: #2A363B;
 }
 
+.home-image {
+    width: 70%;
+}
+
 .fellows .row {
     margin-top: 10px;
     margin-bottom: 10px;
