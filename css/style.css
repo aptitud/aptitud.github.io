@@ -27,6 +27,14 @@ body {
 }
 
 /*Bootstrap navigation styles*/
+.aptitud-navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 5px 5px 5px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
 .navbar-aptitud {
     background-color: transparent !important;
 }
@@ -110,6 +118,10 @@ body {
 }
 
 @media (max-width: 767px) {
+    .navbar-nav > li > a {
+        height: 1.8em;
+    }
+
     .navbar-aptitud .navbar-nav .open .dropdown-menu > li > a {
         color: #2a363b;
     }
