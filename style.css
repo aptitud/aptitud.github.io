@@ -65,6 +65,9 @@ body {
 
 .navbar-aptitud .navbar-nav > li > a {
     color: #fff;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
 }
 
 .navbar-aptitud .navbar-nav > li > a:hover, .navbar-aptitud .navbar-nav > li > a:focus {
@@ -128,6 +131,7 @@ body {
 a {
     color: #dadada;
 }
+
 a:visited, a:active, a:hover, a:link, a:focus {
     background-color: transparent !important;
 }
@@ -137,8 +141,8 @@ h1, h2, h3, h4, h5, p, li {
 }
 
 #tweetMapFrame {
-    height: 100vh;
-    width: 100vh;
+    height: 80vh;
+    width: 90vw;
 }
 
 #includedContent {
