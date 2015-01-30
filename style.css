@@ -46,13 +46,16 @@ body {
     background-color: transparent !important;
 }
 
+.navbar-aptitud ul.nav a:visited {
+    background-color: transparent !important;
+}
+
 .navbar-aptitud .navbar-nav > li > a {
-    color: #2a363b;
+    color: #fff;
 }
 
 .navbar-aptitud .navbar-nav > li > a:hover, .navbar-aptitud .navbar-nav > li > a:focus {
     color: #2a363b;
-    color: #fff;
 }
 
 .navbar-aptitud .navbar-nav > .active > a, .navbar-aptitud .navbar-nav > .active > a:hover, .navbar-aptitud .navbar-nav > .active > a:focus {
