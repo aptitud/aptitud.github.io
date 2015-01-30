@@ -1,3 +1,16 @@
+body {
+    font-family: 'PT Sans', serif;
+    color: #2A363B;
+}
+
 .fellowPage {
-    background-color: #FF6633;
+    background-color: #FF847C;
+}
+
+.fellows .row {
+    margin-top: 10px;
+}
+
+.fellows img {
+    margin-top: 10px;
 }
