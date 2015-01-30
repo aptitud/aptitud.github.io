@@ -1,5 +1,5 @@
 body {
-    font-family: 'PT Sans', serif;
+    font-family: 'Open Sans', serif;
     background-color: #EE5555;
     color: #2A363B;
 }
@@ -22,6 +22,8 @@ body {
     display: inline-block;
     float: none;
     vertical-align: top;
+    font-size: 1.2em;
+    line-height: 1;
 }
 
 .navbar-aptitud .navbar-collapse {
@@ -40,12 +42,17 @@ body {
     color: #2a363b;
 }
 
+.navbar-aptitud ul.nav a:hover {
+    background-color: transparent !important;
+}
+
 .navbar-aptitud .navbar-nav > li > a {
     color: #2a363b;
 }
 
 .navbar-aptitud .navbar-nav > li > a:hover, .navbar-aptitud .navbar-nav > li > a:focus {
     color: #2a363b;
+    color: #fff;
 }
 
 .navbar-aptitud .navbar-nav > .active > a, .navbar-aptitud .navbar-nav > .active > a:hover, .navbar-aptitud .navbar-nav > .active > a:focus {
@@ -59,7 +66,7 @@ body {
 }
 
 .navbar-aptitud .navbar-toggle {
-    border-color: #ffffff;
+    border-color: transparent;
 }
 
 .navbar-aptitud .navbar-toggle:hover, .navbar-aptitud .navbar-toggle:focus {
@@ -72,7 +79,7 @@ body {
 
 .navbar-aptitud .navbar-collapse,
 .navbar-aptitud .navbar-form {
-    border-color: #2a363b;
+    border: 0px
 }
 
 .navbar-aptitud .navbar-link {
