@@ -1,7 +1,6 @@
 $(function () {
     routeWithHash();
     $(".nav a").on('click', function(e) {
-        console.log(e);
         routeTo($(e.target).attr('href').replace("#", ''));
     });
 });
