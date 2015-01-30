@@ -12,3 +12,88 @@ body {
 .fellow img {
     margin-top: 10px;
 }
+
+/*Bootstrap navigation styles*/
+.navbar-aptitud {
+    background-color: #ee5555;
+}
+
+.navbar-aptitud .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar-aptitud .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-aptitud .navbar-brand {
+    color: #2a363b;
+}
+
+.navbar-aptitud .navbar-brand:hover, .navbar-aptitud .navbar-brand:focus {
+    color: #2a363b;
+}
+
+.navbar-aptitud .navbar-text {
+    color: #2a363b;
+}
+
+.navbar-aptitud .navbar-nav > li > a {
+    color: #2a363b;
+}
+
+.navbar-aptitud .navbar-nav > li > a:hover, .navbar-aptitud .navbar-nav > li > a:focus {
+    color: #2a363b;
+}
+
+.navbar-aptitud .navbar-nav > .active > a, .navbar-aptitud .navbar-nav > .active > a:hover, .navbar-aptitud .navbar-nav > .active > a:focus {
+    color: #2a363b;
+    background-color: #ffffff;
+}
+
+.navbar-aptitud .navbar-nav > .open > a, .navbar-aptitud .navbar-nav > .open > a:hover, .navbar-aptitud .navbar-nav > .open > a:focus {
+    color: #2a363b;
+    background-color: #ffffff;
+}
+
+.navbar-aptitud .navbar-toggle {
+    border-color: #ffffff;
+}
+
+.navbar-aptitud .navbar-toggle:hover, .navbar-aptitud .navbar-toggle:focus {
+    background-color: #ffffff;
+}
+
+.navbar-aptitud .navbar-toggle .icon-bar {
+    background-color: #2a363b;
+}
+
+.navbar-aptitud .navbar-collapse,
+.navbar-aptitud .navbar-form {
+    border-color: #2a363b;
+}
+
+.navbar-aptitud .navbar-link {
+    color: #2a363b;
+}
+
+.navbar-aptitud .navbar-link:hover {
+    color: #2a363b;
+}
+
+@media (max-width: 767px) {
+    .navbar-aptitud .navbar-nav .open .dropdown-menu > li > a {
+        color: #2a363b;
+    }
+
+    .navbar-aptitud .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-aptitud .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #2a363b;
+    }
+
+    .navbar-aptitud .navbar-nav .open .dropdown-menu > .active > a, .navbar-aptitud .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-aptitud .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #2a363b;
+        background-color: #ffffff;
+    }
+}
