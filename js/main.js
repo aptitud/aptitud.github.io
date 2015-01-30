@@ -17,7 +17,7 @@ function routeTo(page) {
     if (page === "" || page === undefined) { // TODO: Check valid pages and have a default
         page = "start"
     }
-    window.page = undefined;
+    // do some fade in and fadeout on transition
     $('#main-container').fadeOut(200, function(){
         $('#includedContent').load(page + ".html", function(){
             $('#main-container').fadeIn(200);

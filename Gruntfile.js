@@ -13,7 +13,7 @@ module.exports = function (grunt) {
         watch: {
             options: {livereload: true},
             all: {
-                files: ['**/*.html', 'js/*.js', '**/*.css', 'style.css']
+                files: ['**/*.html', 'js/*.js', '**/*.css']
                 //files: ['**/*.js', '**/*.html', '**/*.css'],
             }
         },
@@ -30,7 +30,6 @@ module.exports = function (grunt) {
                 }
             }
         }
-
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');

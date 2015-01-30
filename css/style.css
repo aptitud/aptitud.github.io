@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
     background-color: transparent;
     color: #2A363B;
@@ -147,11 +147,4 @@ h1, h2, h3, h4, h5, p, li {
 
 #includedContent {
     padding: 2em 2em 4em 2em;
-}
-
-.fadeIn {
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
 }
