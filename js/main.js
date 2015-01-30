@@ -18,11 +18,10 @@ function routeTo(page) {
         page = "start"
     }
     window.page = undefined;
-    $("#includedContent").load(page + ".html", function () {
-        // on completed call init in file
-        if (window.page && window.page.init) {
-            window.page.init();
-        }
+    $('#main-container').fadeOut(200, function(){
+        $('#includedContent').load(page + ".html", function(){
+            $('#main-container').fadeIn(200);
+        });
     });
 }
 
