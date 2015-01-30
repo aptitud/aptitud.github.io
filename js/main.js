@@ -9,7 +9,8 @@ $(function () {
 });
 
 function routeWithHash() {
-    routeTo(window.location.hash.replace("#", ''));
+    var hash = window.location.hash || "";
+    routeTo(hash.replace("#", ''));
 }
 
 function routeTo(page) {

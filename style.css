@@ -132,3 +132,7 @@ h1, h2, h3, h4, h5, p, li {
     height: 100vh;
     width: 100vh;
 }
+
+#includedContent {
+    padding: 2em 2em 4em 2em;
+}
