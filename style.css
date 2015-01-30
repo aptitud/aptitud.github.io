@@ -127,3 +127,8 @@ a:visited, a:active, a:hover, a:link, a:focus {
 h1, h2, h3, h4, h5, p, li {
     color: #ffffff;
 }
+
+#tweetMapFrame {
+    height: 100vh;
+    width: 100vh;
+}
