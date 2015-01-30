@@ -9,6 +9,10 @@ body {
     width: 60%;
 }
 
+#map-image {
+    width: 100%;
+}
+
 .fellows .row {
     margin-top: 10px;
     margin-bottom: 10px;
