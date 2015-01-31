@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "homepage": "https://github.com/aptitud/AptiWeb2.0",
   "authors": [
-    "Marcus Nylander <marcus.nylander@aptitud.se>"
+    "Marcus Nylander <marcus.nylander@aptitud.se>",
+    "Per Jansson <per.jansson@aptitud.se>"
   ],
   "main": "js/main.js",
   "license": "MIT",

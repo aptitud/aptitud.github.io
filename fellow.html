@@ -1,12 +1,11 @@
 <script id="fellow-template" type="text/x-handlebars-template">
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
         <div class="row">
-            <div class="col-xs-4 col-sm-5">
-                <img src="images/fellow/{{img}}" class="img-responsive img-rounded">
+            <div class="col-xs-3 col-sm-4">
+                <img src="images/medarbetare/{{img}}" class="img-responsive img-circle" style="width: 300px">
             </div>
-            <div class="col-xs-8 col-sm-7">
+            <div class="col-xs-9 col-sm-8">
                 <h4>{{name}}</h4>
-
                 <div class="default-text">{{desc}}</div>
             </div>
         </div>
@@ -14,10 +13,7 @@
 </script>
 <div id="fellowPage" class="row">
     <div class="col-xs-offset-1 col-xs-10">
-        <h1>Medarbetare</h1>
-
-        <div id="fellow-list" class="row fellows">
-        </div>
+        <div id="fellow-list" class="row fellows"/>
     </div>
 </div>
 <script>
@@ -29,22 +25,27 @@
         };
     }
     var fellows = [
-        fellow('profile_pic.png', 'Firstname1 Lastname', 'Bacon ipsum dolor amet brisket boudin fatback, tri-tip corned beef turducken sausage balltip andouille. Turducken tri-tip swine filet mignon.'),
-        fellow('profile_pic.png', 'Firstname2 Lastname', 'Bacon ipsum dolor amet brisket boudin fatback, tri-tip corned beef turducken sausage balltip andouille. Turducken tri-tip swine filet mignon.'),
+        fellow('profile_pic.png', 'Per Jansson', 'Nyfiken och otålig utvecklare som älskar att bygga grymma, användbara system och hjälpa andra göra detsamma. Trebarnsfarsa och sportfantast på hemmaplan.'),
+        fellow('profile_pic.png', 'Marcus Nylander', 'Driven mjukvarusnickare, med mångårig erfarenhet, som brinner för arkitektur och kvalitet i utvecklingsprocessen. Gift, flerbarnsförälder, med lust för vintersport och TV-spel.'),
         fellow('profile_pic.png', 'Firstname3 Lastname', 'Bacon ipsum dolor amet brisket boudin fatback, tri-tip corned beef turducken sausage balltip andouille. Turducken tri-tip swine filet mignon.'),
         fellow('profile_pic.png', 'Firstname4 Lastname', 'Bacon ipsum dolor amet brisket boudin fatback, tri-tip corned beef turducken sausage balltip andouille. Turducken tri-tip swine filet mignon.'),
         fellow('profile_pic.png', 'Firstname5 Lastname', 'Bacon ipsum dolor amet brisket boudin fatback, tri-tip corned beef turducken sausage balltip andouille. Turducken tri-tip swine filet mignon.'),
         fellow('profile_pic.png', 'Firstname6 Lastname', 'Bacon ipsum dolor amet brisket boudin fatback, tri-tip corned beef turducken sausage balltip andouille. Turducken tri-tip swine filet mignon.'),
         fellow('profile_pic.png', 'Firstname7 Lastname', 'Bacon ipsum dolor amet brisket boudin fatback, tri-tip corned beef turducken sausage balltip andouille. Turducken tri-tip swine filet mignon.'),
         fellow('profile_pic.png', 'Firstname8 Lastname', 'Bacon ipsum dolor amet brisket boudin fatback, tri-tip corned beef turducken sausage balltip andouille. Turducken tri-tip swine filet mignon.'),
-        fellow('profile_pic.png', 'Firstname9 Lastname', 'Bacon ipsum dolor amet brisket boudin fatback, tri-tip corned beef turducken sausage balltip andouille. Turducken tri-tip swine filet mignon.')
     ];
+
+    function shuffle(o) {
+        for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+        return o;
+    };
 
     function layoutFellows() {
         var fellowTemplate = Handlebars.compile($("#fellow-template").html());
         var layoutDiv = $("#fellow-list");
-        fellows.forEach(function (f) {
-            layoutDiv.append(fellowTemplate(f));
+        shuffle(fellows);
+        fellows.forEach(function (fellow) {
+            layoutDiv.append(fellowTemplate(fellow));
         });
     }
 

@@ -20,6 +20,7 @@ body {
 .fellows .row {
     margin-top: 10px;
     margin-bottom: 10px;
+    height: 250px;
 }
 
 .fellow img {
