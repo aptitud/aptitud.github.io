@@ -10,6 +10,12 @@
         $.getJSON("http://aptitud-sthlm.tumblr.com/api/read/json?num=1&callback=?", function (result) {
             window.blogdata = result.posts[0]["regular-body"];
             $("#blogPage").html(window.blogdata);
+            // Fixup any string as h2 instead as the main page header
+            var header = $("#blogPage strong").first();
+            if (header) {
+                var inner = header.html();
+                header.replaceWith('<h2>' + inner + '</h2>');
+            }
         });
     }
 </script>
