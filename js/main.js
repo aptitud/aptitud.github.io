@@ -5,8 +5,8 @@ $(function () {
         if (href) {
             // hide menu after nav
             /*if($('.navbar-toggle').css('display') !='none'){
-                $(".navbar-toggle").trigger( "click" );
-            }*/
+             $(".navbar-toggle").trigger( "click" );
+             }*/
             routeTo(href.replace("#", ''));
         }
     });
@@ -22,9 +22,14 @@ function routeTo(page) {
         page = "start"
     }
     // do some fade in and fadeout on transition
-    $('#main-container').fadeOut(200, function(){
-        $('#includedContent').load(page + ".html", function(){
+    $('#main-container').fadeOut(200, function () {
+        $('#includedContent').load(page + ".html", function () {
             $('#main-container').fadeIn(200);
+
+            // trigger google analytics
+            if (ga) {
+                ga('send', 'pageview', '/' + page);
+            }
         });
     });
 }
