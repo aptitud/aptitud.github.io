@@ -41,11 +41,21 @@
         return o;
     };
 
+    function addClearFix(layoutDiv, index) {
+        if (index != 0 && index % 4 == 0) {
+            layoutDiv.append("<div class='clearfix visible-lg-block'></div>");
+        }
+        if (index != 0 && index % 3 == 0) {
+            layoutDiv.append("<div class='clearfix visible-md-block'></div>");
+        }
+    }
     function layoutFellows() {
         var fellowTemplate = Handlebars.compile($("#fellow-template").html());
         var layoutDiv = $("#fellow-list");
+
         shuffle(fellows);
-        fellows.forEach(function (fellow) {
+        fellows.forEach(function (fellow, index) {
+            addClearFix(layoutDiv, index);
             layoutDiv.append(fellowTemplate(fellow));
         });
     }
