@@ -43,5 +43,10 @@
     "img": "profile_pic.png",
     "name": "Thomas Granbacka",
     "desc": "Javautvecklare som älskar enkla och vackra lösningar. Gift. Två döttrar. Passionerad fotograf. Har en egen gokart. Har spelat blockflöjt och altsaxofon."
+  },
+  {
+    "img": "profile_pic.png",
+    "name": "Gustav Dahlman",
+    "desc": ".Net utvecklare, före detta komplexoholic som numer förespråkar det enkla. Sambo, pappa, foodie, vinyljunkie, tennisnewbie och skibumwannabee."
   }
 ]
