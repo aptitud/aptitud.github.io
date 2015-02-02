@@ -43,5 +43,10 @@
     "img": "profile_pic.png",
     "name": "Thomas Granbacka",
     "desc": "Javautvecklare som älskar enkla och vackra lösningar. Gift. Två döttrar. Passionerad fotograf. Har en egen gokart. Har spelat blockflöjt och altsaxofon."
+  },
+  {
+    "img": "profile_pic.png",
+    "name": "Åsa Liljegren",
+    "desc": "Utvecklare och arkitekt i .Net-världen som brinner för att lösa svåra problem genom att förenkla kod, arbetssätt och processer. Gäller allt från Javascript till Continuous Delivery."
   }
 ]
