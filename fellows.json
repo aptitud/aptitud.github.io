@@ -48,5 +48,10 @@
     "img": "profile_pic.png",
     "name": "Gustav Dahlman",
     "desc": ".Net utvecklare, före detta komplexoholic som numer förespråkar det enkla. Sambo, pappa, foodie, vinyljunkie, tennisnewbie och skibumwannabee."
+  },
+  {
+    "img": "profile_pic.png",
+    "name": "Håkan Alexander",
+    "desc": "Kodande arkitekt med koll på allt som gör utveckling och deploy smidigt och effektivt. Tränar grabbens fotbollslag och hejar när dottern spelar. Hänger i curlinghallen när tid ges mellan barnens aktiviteter eller byggprojekt i huset tillsammans med min fru."
   }
 ]
