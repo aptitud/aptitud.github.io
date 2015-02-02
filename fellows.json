@@ -53,5 +53,10 @@
     "img": "profile_pic.png",
     "name": "Håkan Alexander",
     "desc": "Kodande arkitekt med koll på allt som gör utveckling och deploy smidigt och effektivt. Tränar grabbens fotbollslag och hejar när dottern spelar. Hänger i curlinghallen när tid ges mellan barnens aktiviteter eller byggprojekt i huset tillsammans med min fru."
+  },
+  {
+    "img": "profile_pic.png",
+    "name": "Åsa Liljegren",
+    "desc": "Utvecklare och arkitekt i .Net-världen som brinner för att lösa svåra problem genom att förenkla kod, arbetssätt och processer. Gäller allt från Javascript till Continuous Delivery."
   }
 ]
