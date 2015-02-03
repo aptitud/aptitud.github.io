@@ -18,12 +18,12 @@ body {
 }
 
 .fellows .row {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .fellow img {
-    margin-top: 10px;
+    width: 125px;
+    margin: 0 auto;
 }
 
 /*Bootstrap navigation styles*/
