@@ -4,9 +4,9 @@ $(function () {
         var href = $(e.target).attr('href');
         if (href) {
             // hide menu after nav
-            /*if($('.navbar-toggle').css('display') !='none'){
-             $(".navbar-toggle").trigger( "click" );
-             }*/
+            if ($('.navbar-toggle').css('display') != 'none') {
+                $(".navbar-toggle").trigger("click");
+            }
             routeTo(href.replace("#", ''));
         }
     });
