@@ -63,5 +63,10 @@
     "img": "profile_pic.png",
     "name": "Peter Qwärnström",
     "desc": "Vetgirig och nyfiken .Net utvecklare som gillar folk, skärgården och nypistade backar. Gift. Har två döttrar plus en lurvig katt."
+  },
+  {
+    "img": "profile_pic.png",
+    "name": "Robert Olofsson",
+    "desc": "Ambitiös och kreativ .Net-utvecklare med hög leveransprecision. Galen i gäddfiske och halvusel som hemmasnickare."
   }
 ]
