@@ -66,6 +66,11 @@
   },
   {
     "img": "profile_pic.png",
+    "name": "Mikael Ahlinder",
+    "desc": "Kreativ .Net utvecklare med ett öga för design. Fotbollstok som gillar enkla lösningar, snabba beslut och långväga resor."
+  },
+  {
+    "img": "profile_pic.png",
     "name": "Robert Olofsson",
     "desc": "Ambitiös och kreativ .Net-utvecklare med hög leveransprecision. Galen i gäddfiske och halvusel som hemmasnickare."
   }
