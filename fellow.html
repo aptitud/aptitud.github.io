@@ -27,6 +27,9 @@
         if (index != 0 && index % 3 == 0) {
             layoutDiv.append("<div class='clearfix visible-md-block'></div>");
         }
+        if (index != 0 && index % 2 == 0) {
+            layoutDiv.append("<div class='clearfix visible-sm-block'></div>");
+        }
     }
 
     function layoutFellows(fellows) {
