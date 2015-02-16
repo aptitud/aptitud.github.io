@@ -26,6 +26,10 @@ body {
     margin: 0 auto;
 }
 
+.fellow .contact {
+    margin-top: 10px;
+}
+
 /*Bootstrap navigation styles*/
 .aptitud-navbar-brand {
     float: left;

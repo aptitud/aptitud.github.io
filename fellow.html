@@ -1,11 +1,23 @@
 <script id="fellow-template" type="text/x-handlebars-template">
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 fellow">
-        <div class="row">
+        <div class="row default-text">
             <img src="images/medarbetare/{{img}}" class="img-responsive">
 
             <h4>{{name}}</h4>
 
-            <div class="default-text">{{desc}}</div>
+            <div>{{desc}}</div>
+
+            <div class="contact">
+                {{#if email}}
+                    <div><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:{{email}}" target="_top">{{email}}</a></div>
+                {{/if}}
+                {{#if twitter}}
+                    <div><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> <a href="https://twitter.com/{{twitter}}" target="_blank"> {{twitter}}</a></div>
+                {{/if}}
+                {{#if phone}}
+                    <div><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> <a href="tel:{{phone}}">{{phone}}</a></div>
+                {{/if}}
+            </div>
         </div>
     </div>
 </script>
