@@ -7,16 +7,45 @@
 
             <div>{{desc}}</div>
 
-            <div class="contact">
+            <div class="contact waysOfContactList">
+                <ul>
                 {{#if email}}
-                    <div><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:{{email}}" target="_top">{{email}}</a></div>
+                    <li>
+                        <a href="mailto:{{email}}" target="_top">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
                 {{/if}}
                 {{#if twitter}}
-                    <div><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> <a href="https://twitter.com/{{twitter}}" target="_blank"> {{twitter}}</a></div>
+                    <li>
+                        <a href="https://twitter.com/marcusoftnet" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                        </a>
+                    </li>
                 {{/if}}
                 {{#if phone}}
-                    <div><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> <a href="tel:{{phone}}">{{phone}}</a></div>
+                    <li>
+                        <a href="tel:{{phone}}">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                        </span>
+                        </a>
+                    </li>
                 {{/if}}
+                {{#if github}}
+                    <li>
+                        <a href="tel:{{github}}">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                        </a>
+                    </li>
+                {{/if}}
+                </ul>
             </div>
         </div>
     </div>
