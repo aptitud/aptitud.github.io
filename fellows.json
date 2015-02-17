@@ -39,7 +39,11 @@
   {
     "img": "profile_pic.png",
     "name": "Johan Elmström",
-    "desc": "Javakodande småbarnspappa som gillar det här med ContinuousDelivery - och därför tar sig friheten att lägga sig i andras arbete. Alltid med goda intentioner och ett leende förstås. Spelar golf och tennis när det ges tillfälle (dvs nästan aldrig)."
+    "desc": "Utvecklare som gillar enkla, rena, torra lösningar och ContinuousDelivery - och därför tar sig friheten att lägga sig i andras arbete. Alltid med goda intentioner och ett leende förstås. Spelar golf och tennis när det ges tillfälle (dvs nästan aldrig).",
+    "email": "johan.elmstrom@aptitud.se",
+    "twitter": "j_elmstrom",
+    "phone": "0733-585661",
+    "github": "jelmstrom"
   },
   {
     "img": "profile_pic.png",
