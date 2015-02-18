@@ -17,12 +17,19 @@ body {
     margin: 10px;
 }
 .fellow img {
-    width: 125px;
+    height: 125px;
     margin: 0 auto;
 }
 .fellow .contact {
     margin-top: 10px;
 }
+.fellow .contact ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
 /*Bootstrap navigation styles*/
 
 .aptitud-navbar-brand {
@@ -128,13 +135,4 @@ h1, h2, h3, h4, h5, p, li {
 }
 #includedContent {
     padding: 2em 2em 4em 2em;
-}
-
-.waysOfContactList ul li {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-.waysOfContactList ul li {
-    display: inline;
 }
