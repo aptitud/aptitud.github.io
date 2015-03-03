@@ -11,7 +11,7 @@
                 <ul>
                 {{#if email}}
                     <li>
-                        <a href="mailto:{{email}}" target="_blank">
+                        <a rel='email' href="[email]{{name}}">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
                             </span>
@@ -85,8 +85,36 @@
     }
 
     setBackgroundColor("#FF6633");
+
+    function safeUpEmailAddresses(){
+        $("a[rel='email']").each(function(){
+            // Modify the mailto: value
+            var mailtoVal = $(this).attr('href');
+            mailtoVal = mailtoVal.replace(" ", ".");
+            mailtoVal = mailtoVal.replace("[email]","mailto:");
+            mailtoVal = mailtoVal.replace("å", "a");
+            mailtoVal = mailtoVal.replace("ä", "a");
+            mailtoVal = mailtoVal.replace("ö", "o");
+            mailtoVal = mailtoVal.toLowerCase();
+
+            mailtoVal = mailtoVal + "@" + "aptitud" + ".se";
+
+            console.log(mailtoVal)
+
+            // Auto-generate title tags for users
+            var mailtoTitle = mailtoVal.replace("mailto:","Maila till ");
+            $(this).attr('title',mailtoTitle);
+
+            // onClick Event
+            $(this).click(function(){
+                window.open(mailtoVal, "_blank");
+                return false;
+            });
+        });
+    };
+
     $.getJSON("fellows.json").done(function (fellows) {
         layoutFellows(fellows);
+        safeUpEmailAddresses();
     });
-
 </script>
