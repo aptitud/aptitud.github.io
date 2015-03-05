@@ -9,7 +9,6 @@
 
             <div class="contact">
                 <ul>
-                {{#if email}}
                     <li>
                         <a rel='email' href="[email]{{name}}">
                             <span class="fa-stack fa-lg">
@@ -17,7 +16,6 @@
                             </span>
                         </a>
                     </li>
-                {{/if}}
                 {{#if twitter}}
                     <li>
                         <a href="https://twitter.com/{{twitter}}" target="_blank">
@@ -91,11 +89,11 @@
             // Modify the mailto: value
             var mailtoVal = $(this).attr('href');
             mailtoVal = mailtoVal.replace(" ", ".");
+            mailtoVal = mailtoVal.toLowerCase();
             mailtoVal = mailtoVal.replace("[email]","mailto:");
             mailtoVal = mailtoVal.replace("å", "a");
             mailtoVal = mailtoVal.replace("ä", "a");
             mailtoVal = mailtoVal.replace("ö", "o");
-            mailtoVal = mailtoVal.toLowerCase();
 
             mailtoVal = mailtoVal + "@" + "aptitud" + ".se";
 
