@@ -20,12 +20,11 @@ body {
     height: 125px;
     margin: 0 auto;
 }
-.fellow .contact {
-    margin-top: 10px;
-}
-.fellow .contact ul li {
+.fellow .contact ul {
     margin: 0;
     padding: 0;
+}
+.fellow .contact ul li {
     list-style-type: none;
     display: inline-block;
 }
