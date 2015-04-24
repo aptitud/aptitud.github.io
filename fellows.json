@@ -1,6 +1,6 @@
 [
   {
-    "img": "profile_pic.png",
+    "img": "perj.jpg",
     "name": "Per Jansson",
     "desc": "Nyfiken och otålig utvecklare (java, web, app) som älskar att bygga grymma, användbara system och hjälpa andra göra detsamma. Gift, trebarnsfarsa och sportfantast på hemmaplan.",
     "twitter": "per_jansson",
@@ -8,7 +8,7 @@
     "github": "perjansson"
   },
   {
-    "img": "profile_pic.png",
+    "img": "marcusn.jpg",
     "name": "Marcus Nylander",
     "desc": "Driven mjukvarusnickare, med mångårig erfarenhet, som brinner för arkitektur och kvalitet i utvecklingsprocessen. Gift, flerbarnsförälder, med lust för vintersport och TV-spel."
   },
@@ -20,7 +20,7 @@
     "github": "marcusoftnet"
   },
   {
-    "img": "profile_pic.png",
+    "img": "hugoh.jpg",
     "name": "Hugo Häggmark",
     "desc": "Passionerad utvecklare och coach som brinner för att skapa mervärde och läsbar kod med hög kvalitet. Glad och gift 2 barnspappa, snorklare, brädåkare och TV-spelsfantast.",
     "twitter": "hugohaggmark",
@@ -34,12 +34,12 @@
     "github": "hampusklarin"
   },
   {
-    "img": "profile_pic.png",
+    "img": "andersl.jpg",
     "name": "Anders Löwenborg",
     "desc": "Pappa, seglare, informations junkie. Passion för, och inspirerad av människor. Grundare och glad kollega."
   },
   {
-    "img": "johelm.jpg",
+    "img": "johane.jpg",
     "name": "Johan Elmström",
     "desc": "Utvecklare som gillar enkla, rena, torra lösningar och ContinuousDelivery - och därför tar sig friheten att lägga sig i andras arbete. Alltid med goda intentioner och ett leende förstås. Spelar golf och tennis när det ges tillfälle (dvs nästan aldrig).",
     "twitter": "j_elmstrom",
@@ -47,7 +47,7 @@
     "github": "jelmstrom"
   },
   {
-    "img": "profile_pic.png",
+    "img": "johanl.jpg",
     "name": "Johan Leino",
     "desc": "Driven och noggrann webbutvecklare som inte drar sig för att skifta fokus mellan GUI och back-end, eller något annat som tillför värde. Gift småbarnsfar som försöker hitta tid till matlagningen eller någon form av motionsaktivitet så fort tillfälle finns.",
     "twitter": "johanleino",
@@ -55,17 +55,17 @@
     "github": "jole78"
   },
   {
-    "img": "profile_pic.png",
+    "img": "thomasg.jpg",
     "name": "Thomas Granbacka",
     "desc": "Javautvecklare som älskar enkla och vackra lösningar. Gift. Två döttrar. Passionerad fotograf. Har en egen gokart. Har spelat blockflöjt och altsaxofon."
   },
   {
-    "img": "profile_pic.png",
+    "img": "gustavd.jpg",
     "name": "Gustav Dahlman",
     "desc": ".Net utvecklare, före detta komplexoholic som numer förespråkar det enkla. Sambo, pappa, foodie, vinyljunkie, tennisnewbie och skibumwannabee."
   },
   {
-    "img": "profile_pic.png",
+    "img": "hakana.jpg",
     "name": "Håkan Alexander",
     "desc": "Kodande arkitekt med koll på allt som gör utveckling och deploy smidigt och effektivt. Tränar grabbens fotbollslag och hejar när dottern spelar. Hänger i curlinghallen när tid ges mellan barnens aktiviteter eller byggprojekt i huset tillsammans med min fru."
   },
@@ -75,7 +75,7 @@
     "desc": "Utvecklare och arkitekt i .Net-världen som brinner för att lösa svåra problem genom att förenkla kod, arbetssätt och processer. Gäller allt från Javascript till Continuous Delivery."
   },
   {
-    "img": "profile_pic.png",
+    "img": "peterq.jpg",
     "name": "Peter Qwärnström",
     "desc": "Vetgirig och nyfiken .Net utvecklare som gillar folk, skärgården och nypistade backar. Gift. Har två döttrar plus en lurvig katt."
   },
@@ -85,8 +85,36 @@
     "desc": "Kreativ .Net utvecklare med ett öga för design. Fotbollstok som gillar enkla lösningar, snabba beslut och långväga resor."
   },
   {
-    "img": "profile_pic.png",
+    "img": "roberto.jpg",
     "name": "Robert Olofsson",
     "desc": "Ambitiös och kreativ .Net-utvecklare med hög leveransprecision. Galen i gäddfiske och halvusel som hemmasnickare. "
+  },
+  {
+    "img": "tomasn.jpg",
+    "name": "Tomas Näslund",
+    "desc": ""
+  },
+  {
+    "img": "magnush.jpg",
+    "name": "Magnus Hübner",
+    "desc": ""
+  },
+  {
+    "img": "davidb.jpg",
+    "name": "David Blomberg",
+    "desc": ""
+  },
+  {
+    "img": "johannesg.jpg",
+    "name": "Johannes Gunnbäck",
+    "desc": ""
+  },
+  {
+    "img": "ankih.jpg",
+    "name": "Anki Hedkvist",
+    "desc": ""
   }
+
+
+
 ]
