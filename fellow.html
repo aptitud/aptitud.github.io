@@ -2,11 +2,8 @@
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 fellow">
         <div class="row default-text">
             <img src="images/medarbetare/{{img}}" class="img-responsive img-rounded">
-
             <h4 class="text-center">{{name}}</h4>
-
             <div class="text-justify">{{desc}}</div>
-
             <div class="contact text-center">
                 <ul>
                     <li>
@@ -16,33 +13,39 @@
                             </span>
                         </a>
                     </li>
-                {{#if twitter}}
+                    {{#if twitter}}
                     <li>
                         <a href="https://twitter.com/{{twitter}}" target="_blank">
-                        <span class="fa-stack fa-lg">
+                            <span class="fa-stack fa-lg">
                             <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
                         </span>
                         </a>
                     </li>
-                {{/if}}
-                {{#if phone}}
+                    {{/if}} {{#if phone}}
                     <li>
                         <a href="tel:{{phone}}">
-                        <span class="fa-stack fa-lg">
+                            <span class="fa-stack fa-lg">
                             <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
                         </span>
                         </a>
                     </li>
-                {{/if}}
-                {{#if github}}
+                    {{/if}} {{#if github}}
                     <li>
                         <a href="http://github.com/{{github}}" target="_blank">
-                        <span class="fa-stack fa-lg">
+                            <span class="fa-stack fa-lg">
                             <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                         </span>
                         </a>
                     </li>
-                {{/if}}
+                    {{/if}} {{#if instagram}}
+                    <li>
+                        <a href="https://instagram.com/{{instagram}}" target="_blank">
+                            <span class="fa-stack fa-lg">
+                            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                        </a>
+                    </li>
+                    {{/if}}
                 </ul>
             </div>
         </div>
@@ -50,70 +53,70 @@
 </script>
 <div id="fellowPage" class="row">
     <div class="col-xs-offset-1 col-xs-10">
-        <div id="fellow-list" class="row fellows"/>
+        <div id="fellow-list" class="row fellows" />
     </div>
 </div>
 <script>
-    function shuffle(o) {
-        for (var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-        return o;
+function shuffle(o) {
+    for (var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+}
+
+function addClearFix(layoutDiv, index) {
+    if (index !== 0 && index % 4 === 0) {
+        layoutDiv.append("<div class='clearfix visible-lg-block'></div>");
     }
-
-    function addClearFix(layoutDiv, index) {
-        if (index != 0 && index % 4 == 0) {
-            layoutDiv.append("<div class='clearfix visible-lg-block'></div>");
-        }
-        if (index != 0 && index % 3 == 0) {
-            layoutDiv.append("<div class='clearfix visible-md-block'></div>");
-        }
-        if (index != 0 && index % 2 == 0) {
-            layoutDiv.append("<div class='clearfix visible-sm-block'></div>");
-        }
+    if (index !== 0 && index % 3 === 0) {
+        layoutDiv.append("<div class='clearfix visible-md-block'></div>");
     }
-
-    function layoutFellows(fellows) {
-        var fellowTemplate = Handlebars.compile($("#fellow-template").html());
-        var layoutDiv = $("#fellow-list");
-
-        shuffle(fellows);
-        fellows.forEach(function (fellow, index) {
-            addClearFix(layoutDiv, index);
-            layoutDiv.append(fellowTemplate(fellow));
-        });
+    if (index !== 0 && index % 2 === 0) {
+        layoutDiv.append("<div class='clearfix visible-sm-block'></div>");
     }
+}
 
-    setBackgroundColor("#FF6633");
+function layoutFellows(fellows) {
+    var fellowTemplate = Handlebars.compile($("#fellow-template").html());
+    var layoutDiv = $("#fellow-list");
 
-    function safeUpEmailAddresses(){
-        $("a[rel='email']").each(function(){
-            // Modify the mailto: value
-            var mailtoVal = $(this).attr('href');
-            mailtoVal = mailtoVal.replace(" ", ".");
-            mailtoVal = mailtoVal.toLowerCase();
-            mailtoVal = mailtoVal.replace("[email]","mailto:");
-            mailtoVal = mailtoVal.replace("å", "a");
-            mailtoVal = mailtoVal.replace("ä", "a");
-            mailtoVal = mailtoVal.replace("ö", "o");
-            mailtoVal = mailtoVal.replace("ü", "u");
-
-            mailtoVal = mailtoVal + "@" + "aptitud" + ".se";
-
-            console.log(mailtoVal)
-
-            // Auto-generate title tags for users
-            var mailtoTitle = mailtoVal.replace("mailto:","Maila till ");
-            $(this).attr('title',mailtoTitle);
-
-            // onClick Event
-            $(this).click(function(){
-                window.open(mailtoVal, "_blank");
-                return false;
-            });
-        });
-    };
-
-    $.getJSON("fellows.json").done(function (fellows) {
-        layoutFellows(fellows);
-        safeUpEmailAddresses();
+    shuffle(fellows);
+    fellows.forEach(function(fellow, index) {
+        addClearFix(layoutDiv, index);
+        layoutDiv.append(fellowTemplate(fellow));
     });
+}
+
+setBackgroundColor("#FF6633");
+
+function safeUpEmailAddresses() {
+    $("a[rel='email']").each(function() {
+        // Modify the mailto: value
+        var mailtoVal = $(this).attr('href');
+        mailtoVal = mailtoVal.replace(" ", ".");
+        mailtoVal = mailtoVal.toLowerCase();
+        mailtoVal = mailtoVal.replace("[email]", "mailto:");
+        mailtoVal = mailtoVal.replace("å", "a");
+        mailtoVal = mailtoVal.replace("ä", "a");
+        mailtoVal = mailtoVal.replace("ö", "o");
+        mailtoVal = mailtoVal.replace("ü", "u");
+
+        mailtoVal = mailtoVal + "@" + "aptitud" + ".se";
+
+        console.log(mailtoVal);
+
+        // Auto-generate title tags for users
+        var mailtoTitle = mailtoVal.replace("mailto:", "Maila till ");
+        $(this).attr('title', mailtoTitle);
+
+        // onClick Event
+        $(this).click(function() {
+            window.open(mailtoVal, "_blank");
+            return false;
+        });
+    });
+}
+
+$.getJSON("fellows.json").done(function(fellows) {
+    layoutFellows(fellows);
+    safeUpEmailAddresses();
+});
 </script>
