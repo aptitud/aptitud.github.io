@@ -92,29 +92,46 @@
   {
     "img": "tomasn.jpg",
     "name": "Tomas Näslund",
-    "desc": ""
+    "desc": "Nackabo, nanobryggare, matlagare och musiknörd. Spenderar dagarna med försäljning, rekrytering och andra bolagsbitar. Tveka inte att slå en signal!"
   },
   {
     "img": "magnush.jpg",
     "name": "Magnus Hübner",
-    "desc": ""
+    "desc": "Frontend-utvecklare som gillar sol och snö, gärna i kombination. Ogärna på sommaren. Pappa till två. Gillar skidor, cykel och boll. Allergisk mot saker som inte funkar som de borde. Bosatt söder om söder, lantligt men modernt med närhet till kontinenten."
   },
   {
     "img": "davidb.jpg",
     "name": "David Blomberg",
-    "desc": ""
+    "desc": "Gift pappa & ödmjuk systemutvecklare som försöker göra skillnad."
   },
   {
     "img": "johannesg.jpg",
     "name": "Johannes Gunnbäck",
-    "desc": ""
+    "desc": "Filmnörd, dykare, systemutvecklare. Har en näsa för problemlösning och en passion för kodkvalitet, TDD och agile. Tycker det är lika roligt att utvecklar frontend- som backendapplikationer."
   },
   {
     "img": "ankih.jpg",
     "name": "Anki Hedkvist",
-    "desc": ""
+    "desc": "Enträgen testledare och testare som inte ger sig i första taget. Tvåbarnsmor som gillar musik, vin och ost. Drivs av att allt alltid kan bli bättre. F.d. ridlärare och erfaren flugfiskare."
+  },
+  {
+    "img": "profile_pic.png",
+    "name": "Jessica Wikander",
+    "desc": "Målfokuserad projektledare från norrlandsskogen. Grym bilförare och hyffsat mogen. Maraton som gammal merit. Skapar konstverk med kritor utan slit."
+  },
+  {
+    "img": "profile_pic.png",
+    "name": "Jonas Ahnlund",
+    "desc": "Systemutvecklande pappa med passion för matlagning, old-school gaming och kodkvalitet (inte nödvändigtvis rankat i den ordningen)."
+  },
+  {
+    "img": "profile_pic.png",
+    "name": "Fredric Ståhlgren",
+    "desc": "Brinner för att ha kul i jobbet. Gillar att få organisationer och team att jobba effektivt och tillsammans. Ledare med utgångspunkt i både individen, gruppen, affären och tekniken."
+  },
+  {
+    "img": "profile_pic.png",
+    "name": "Andreas Nilsson",
+    "desc": "En kodande häxmästare som svär när saker inte går som han vill (vilket nästan aldrig händer). Hitills aldrig fångad på corporate-bilder."
   }
-
-
-
 ]
