@@ -56,9 +56,20 @@ body {
 .fellows .row {
     margin: 10px 10px 30px 10px;
 }
+.fellow {
+    padding-right: 50px;
+    padding-left: 50px;
+    color: #FFF;
+}
+.fellow > h4 {
+    margin-bottom: 0px;
+}
 .fellow img {
     height: 125px;
     margin: 0 auto;
+}
+.fellow .desc {
+    min-height: 225px;
 }
 .fellow .contact ul {
     margin: 0;
@@ -155,9 +166,6 @@ body {
         color: #2a363b;
         background-color: transparent !important;
     }
-}
-.default-text {
-    color: #ffffff;
 }
 a {
     color: #dadada;

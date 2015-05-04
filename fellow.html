@@ -1,54 +1,52 @@
 <script id="fellow-template" type="text/x-handlebars-template">
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 fellow">
-        <div class="row default-text">
-            <img src="images/medarbetare/{{img}}" class="img-responsive img-rounded">
-            <h4 class="text-center">{{name}}</h4>
-            <div class="text-justify">{{desc}}</div>
-            <div class="contact text-center">
-                <ul>
-                    <li>
-                        <a rel='email' href="[email]{{name}}"  target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    {{#if twitter}}
-                    <li>
-                        <a href="https://twitter.com/{{twitter}}" target="_blank">
-                            <span class="fa-stack fa-lg">
-                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+    <div class="col-xs-12 col-sm-6 col-lg-4 fellow">
+        <img src="images/medarbetare/{{img}}" class="img-responsive img-rounded">
+        <h4 class="text-center">{{name}}</h4>
+        <div class="contact text-center">
+            <ul>
+                <li>
+                    <a rel='email' href="[email]{{name}}"  target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
                         </span>
-                        </a>
-                    </li>
-                    {{/if}} {{#if phone}}
-                    <li>
-                        <a href="tel:{{phone}}">
-                            <span class="fa-stack fa-lg">
-                            <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-                        </span>
-                        </a>
-                    </li>
-                    {{/if}} {{#if github}}
-                    <li>
-                        <a href="http://github.com/{{github}}" target="_blank">
-                            <span class="fa-stack fa-lg">
-                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                        </span>
-                        </a>
-                    </li>
-                    {{/if}} {{#if instagram}}
-                    <li>
-                        <a href="https://instagram.com/{{instagram}}" target="_blank">
-                            <span class="fa-stack fa-lg">
-                            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                        </span>
-                        </a>
-                    </li>
-                    {{/if}}
-                </ul>
-            </div>
+                    </a>
+                </li>
+                {{#if twitter}}
+                <li>
+                    <a href="https://twitter.com/{{twitter}}" target="_blank">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                </li>
+                {{/if}} {{#if phone}}
+                <li>
+                    <a href="tel:{{phone}}">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                </li>
+                {{/if}} {{#if github}}
+                <li>
+                    <a href="http://github.com/{{github}}" target="_blank">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                </li>
+                {{/if}} {{#if instagram}}
+                <li>
+                    <a href="https://instagram.com/{{instagram}}" target="_blank">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                </li>
+                {{/if}}
+            </ul>
         </div>
+        <div class="desc text-justify">{{desc}}</div>
     </div>
 </script>
 <div id="fellowPage" class="row">
@@ -63,11 +61,8 @@ function shuffle(o) {
 }
 
 function addClearFix(layoutDiv, index) {
-    if (index !== 0 && index % 4 === 0) {
-        layoutDiv.append("<div class='clearfix visible-lg-block'></div>");
-    }
     if (index !== 0 && index % 3 === 0) {
-        layoutDiv.append("<div class='clearfix visible-md-block'></div>");
+        layoutDiv.append("<div class='clearfix visible-lg-block'></div>");
     }
     if (index !== 0 && index % 2 === 0) {
         layoutDiv.append("<div class='clearfix visible-sm-block'></div>");
