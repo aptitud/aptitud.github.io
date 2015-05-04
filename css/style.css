@@ -60,16 +60,24 @@ body {
     padding-right: 50px;
     padding-left: 50px;
     color: #FFF;
+    min-height: 350px;
 }
+
+@media (max-width: 767px) {
+  .fellow {
+    min-height: 0px;
+    padding-bottom: 50px;
+  }
+}
+
+
+
 .fellow > h4 {
     margin-bottom: 0px;
 }
 .fellow img {
     height: 125px;
     margin: 0 auto;
-}
-.fellow .desc {
-    min-height: 225px;
 }
 .fellow .contact ul {
     margin: 0;
