@@ -9,7 +9,7 @@ För att lägga till filer behöver de läggas till i repot. Det kan göras med 
 2. git checkout gh-pages
 3. npm install (npm has to be installed on your machine)
 4. grunt server
-5. Klicka här http://localhost:8080/?local=true
+5. Klicka här [http://localhost:8080/?local=true](http://localhost:8080/?local=true)
 
 ## Deploy:a till Github pages
 1. git push origin gh-pages
