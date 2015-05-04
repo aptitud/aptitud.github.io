@@ -1,11 +1,51 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
     background-color: transparent;
     color: #2A363B;
+    margin: 0;
 }
+
+#main-container {
+    height: 85%;
+}
+
+#includedContent {
+    padding: 2em 2em 4em 2em;
+    height: 100%;
+}
+
+.aligner {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-center {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  max-width: 100%;
+}
+
 .home-image {
-    width: 60%;
+    width: 70%;
 }
 #map-image {
     width: 100%;
@@ -131,7 +171,4 @@ h1, h2, h3, h4, h5, p, li {
 #tweetMapFrame {
     height: 80vh;
     width: 90vw;
-}
-#includedContent {
-    padding: 2em 2em 4em 2em;
 }
