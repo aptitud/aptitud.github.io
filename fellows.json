@@ -28,7 +28,9 @@
     "desc": "Passionerad utvecklare och coach som brinner för att skapa mervärde och läsbar kod med hög kvalitet. Glad och gift 2 barnspappa som njuter av snorkling, brädåkning, geocaching och TV-spel.",
     "phone": "0708-555667",
     "github": "hugohaggmark",
-    "instagram": "hugohaggmark"
+    "others" : [
+        { "name" : "instagram",     "url" : "https://instagram.com/hugohaggmark" }
+    ]
 }, {
     "img": "profile_pic.png",
     "name": "Hampus Klarin",
