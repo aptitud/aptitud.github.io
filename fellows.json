@@ -84,7 +84,7 @@
     "phone": "073-6544433",
     "services" : [
         { "name" : "twitter",     "url" : "http://twitter.com/haxen" },
-        { "name" : "github",     "url" : "http://twitter.com/haxen" }
+        { "name" : "github",     "url" : "http://github.com/haxen" }
     ]
 }, {
     "img": "profile_pic.png",
