@@ -17,7 +17,11 @@
     "twitter": "marcusoftnet",
     "github": "marcusoftnet",
     "blog": "http://www.marcusoft.net",
-    "linkedin" : "https://se.linkedin.com/in/marcushammarberg"
+    "others" : [
+        { "name" : "linkedin",       "url" : "https://se.linkedin.com/in/marcushammarberg" },
+        { "name" : "stack-overflow", "url" : "http://stackoverflow.com/users/314670/marcus-hammarberg" },
+        { "name" : "slideshare",     "url" : "http://slideshare.net/marcusoftnet/" }
+    ]
 }, {
     "img": "hugoh.jpg",
     "name": "Hugo Häggmark",
