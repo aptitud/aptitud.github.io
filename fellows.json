@@ -49,7 +49,8 @@
     "desc": "Pappa, seglare, informations junkie. Passion för, och inspirerad av människor. Grundare och glad kollega. Jobbar bl a med rekrytering - ring mig om du är nyfiken!",
     "phone": "0704-619848",
     "services" : [
-        { "name" : "twitter",     "url" : "http://twitter.com/anderslowenborg" }
+        { "name" : "twitter",     "url" : "http://twitter.com/anderslowenborg" },
+        { "name" : "linkedin",     "url" : "https://se.linkedin.com/in/lowenborg" }
     ]
 }, {
     "img": "johane.jpg",
