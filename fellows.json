@@ -39,7 +39,7 @@
     "img": "profile_pic.png",
     "name": "Hampus Klarin",
     "desc": "Glad och noggrann .NET-utvecklare. Hyser en stor passion för gitarrer; bygga, modda, spela... När han är ledig spenderar han helst tiden på resande fot med sin fru.",
-    "phone": "0705-679 640",
+    "phone": "0705-679640",
     "services" : [
         { "name" : "github",        "url" : "http://github.com/hampusklarin" },        
         { "name" : "linkedin",      "url" : "https://www.linkedin.com/in/hampusklarin" },
