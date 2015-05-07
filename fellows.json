@@ -2,11 +2,11 @@
     "img": "perj.jpg",
     "name": "Per Jansson",
     "desc": "Nyfiken och otålig utvecklare (java, web, mobil) som älskar att bygga grymma, användbara system och hjälpa andra göra detsamma. Gift, trebarnsfarsa och sportfantast på hemmaplan.",
-    "twitter": "per_jansson",
     "phone": "0702-662106",
-    "github": "perjansson",
     "blog": "http://thecuriousdeveloper.com",
-    "others" : [
+    "services" : [
+        { "name" : "github",        "url" : "http://github.com/perjansson" },
+        { "name" : "twitter",        "url" : "http://twitter.com/per_jansson" },
         { "name" : "linkedin",       "url" : "https://se.linkedin.com/in/pichdude" },
         { "name" : "stack-overflow", "url" : "http://stackoverflow.com/users/274426/per-jansson" }
     ]
@@ -18,10 +18,10 @@
     "img": "marham.jpg",
     "name": "Marcus Hammarberg",
     "desc": "Coach med agilt/lean fokus och stark koppling till det praktiska. .NET / JavaScript utvecklare i botten. Motto: Få agile att fungera i praktiken! Gift, 3 barn, bor i Indonesien. Känd från TV",
-    "twitter": "marcusoftnet",
-    "github": "marcusoftnet",
     "blog": "http://www.marcusoft.net",
-    "others" : [
+    "services" : [
+        { "name" : "twitter",        "url" : "http://twitter.com/marcusoftnet" },
+        { "name" : "github",         "url" : "http://github.com/marcusoftnet" },
         { "name" : "linkedin",       "url" : "https://se.linkedin.com/in/marcushammarberg" },
         { "name" : "stack-overflow", "url" : "http://stackoverflow.com/users/314670/marcus-hammarberg" },
         { "name" : "slideshare",     "url" : "http://slideshare.net/marcusoftnet/" }
@@ -30,37 +30,45 @@
     "img": "hugoh.jpg",
     "name": "Hugo Häggmark",
     "desc": "Passionerad utvecklare och coach som brinner för att skapa mervärde och läsbar kod med hög kvalitet. Glad och gift 2 barnspappa som njuter av snorkling, brädåkning, geocaching och TV-spel.",
-    "github": "hugohaggmark",
-    "others" : [
-        { "name" : "instagram",     "url" : "https://instagram.com/hugohaggmark" }
-    ],
-    "blog": "http://www.hugohaggmark.com"
+    "blog": "http://www.hugohaggmark.com",
+    "services" : [
+        { "name" : "github",        "url" : "http://github.com/hugohaggmark" },
+        { "name" : "instagram",     "url" : "https://instagram.com/hugohaggmark" }        
+    ]
 }, {
     "img": "profile_pic.png",
     "name": "Hampus Klarin",
     "desc": "Glad och noggrann .NET-utvecklare. Hyser en stor passion för gitarrer; bygga, modda, spela... När han är ledig spenderar han helst tiden på resande fot med sin fru.",
     "phone": "0705-679 640",
-    "github": "hampusklarin"
+    "services" : [
+        { "name" : "github",        "url" : "http://github.com/hampusklarin" }        
+    ]
 }, {
     "img": "andersl.jpg",
     "name": "Anders Löwenborg",
     "desc": "Pappa, seglare, informations junkie. Passion för, och inspirerad av människor. Grundare och glad kollega. Jobbar bl a med rekrytering - ring mig om du är nyfiken!",
     "phone": "0704-619848",
-    "twitter": "anderslowenborg"
+    "services" : [
+        { "name" : "twitter",     "url" : "http://twitter.com/anderslowenborg" }
+    ]
 }, {
     "img": "johane.jpg",
     "name": "Johan Elmström",
     "desc": "Utvecklare som gillar enkla, rena,  lösningar, ContinuousDelivery och att lära sig nya saker. Gift tvåbarnsfar som spelar golf och tennis när det ges tillfälle (dvs nästan aldrig).",
-    "twitter": "j_elmstrom",
     "phone": "0733-585661",
-    "github": "jelmstrom"
+    "services" : [
+        { "name" : "twitter",     "url" : "http://twitter.com/j_elmstrom" },
+        { "name" : "github",        "url" : "http://github.com/jelmstrom" }        
+    ]
 }, {
     "img": "johanl.jpg",
     "name": "Johan Leino",
     "desc": "Driven och noggrann webbutvecklare som inte drar sig för att skifta fokus mellan GUI och back-end, eller något annat som tillför värde. Gift småbarnsfar som försöker hitta tid till matlagningen eller någon form av motionsaktivitet så fort tillfälle finns.",
-    "twitter": "johanleino",
     "phone": "0722-002804",
-    "github": "jole78"
+    "services" : [
+        { "name" : "twitter",     "url" : "http://twitter.com/johanleino" },
+        { "name" : "github",     "url" : "http://twitter.com/jole78" }
+    ]
 }, {
     "img": "thomasg.jpg",
     "name": "Thomas Granbacka",
@@ -68,14 +76,16 @@
 }, {
     "img": "gustavd.jpg",
     "name": "Gustav Dahlman",
-    "desc": ".Net utvecklare, före detta komplexoholic som numer förespråkar det enkla. Sambo, pappa, foodie, vinyljunkie, tennisnewbie och skibumwannabee."
+    "desc": ".net utvecklare, före detta komplexoholic som numer förespråkar det enkla. Sambo, pappa, foodie, vinyljunkie, tennisnewbie och skibumwannabee."
 }, {
     "img": "hakana.jpg",
     "name": "Håkan Alexander",
     "desc": "Kodande arkitekt med koll på allt som gör utveckling och deploy smidigt och effektivt. Tränar grabbens fotbollslag och hejar när dottern spelar. Hänger i curlinghallen när tid ges mellan barnens aktiviteter eller byggprojekt i huset tillsammans med min fru.",
     "phone": "073-6544433",
-    "github": "haxen",
-    "twitter": "haxen"
+    "services" : [
+        { "name" : "twitter",     "url" : "http://twitter.com/haxen" },
+        { "name" : "github",     "url" : "http://twitter.com/haxen" }
+    ]
 }, {
     "img": "profile_pic.png",
     "name": "Åsa Liljegren",

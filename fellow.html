@@ -11,27 +11,11 @@
                         </span>
                     </a>
                 </li>
-                {{#if twitter}}
-                <li>
-                    <a href="https://twitter.com/{{twitter}}" target="_blank">
-                        <span class="fa-stack fa-lg">
-                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                    </span>
-                    </a>
-                </li>
-                {{/if}} {{#if phone}}
+                {{#if phone}}
                 <li>
                     <a href="tel:{{phone}}">
                         <span class="fa-stack fa-lg">
                         <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-                    </span>
-                    </a>
-                </li>
-                {{/if}} {{#if github}}
-                <li>
-                    <a href="http://github.com/{{github}}" target="_blank">
-                        <span class="fa-stack fa-lg">
-                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                     </span>
                     </a>
                 </li>
@@ -43,24 +27,20 @@
                     </span>
                     </a>
                 </li>
-                {{/if}}                
-            </ul>
-        </div>
-        {{#if others}}
-        <div class="contact text-center">
-            <ul>
-            {{#each others}}
-                <li>
-                    <a href="{{this.url}}" target="_blank">
-                        <span class="fa-stack fa-lg">
-                        <i class="fa fa-{{this.name}} fa-stack-1x fa-inverse"></i>
-                    </span>
-                    </a>
-                </li>
-            {{/each}}
+                {{/if}}             
+                {{#if services}}
+                    {{#each services}}
+                    <li>
+                        <a href="{{this.url}}" target="_blank">
+                            <span class="fa-stack fa-lg">
+                            <i class="fa fa-{{this.name}} fa-stack-1x fa-inverse"></i>
+                        </span>
+                        </a>
+                    </li>
+                    {{/each}}
+                {{/if}}
             </ul>
         </div>        
-        {{/if}}
         <div class="desc text-justify">{{desc}}</div>
     </div>
 </script>
