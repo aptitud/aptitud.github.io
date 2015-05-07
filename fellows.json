@@ -72,7 +72,10 @@
 }, {
     "img": "hakana.jpg",
     "name": "Håkan Alexander",
-    "desc": "Kodande arkitekt med koll på allt som gör utveckling och deploy smidigt och effektivt. Tränar grabbens fotbollslag och hejar när dottern spelar. Hänger i curlinghallen när tid ges mellan barnens aktiviteter eller byggprojekt i huset tillsammans med min fru."
+    "desc": "Kodande arkitekt med koll på allt som gör utveckling och deploy smidigt och effektivt. Tränar grabbens fotbollslag och hejar när dottern spelar. Hänger i curlinghallen när tid ges mellan barnens aktiviteter eller byggprojekt i huset tillsammans med min fru.",
+    "phone": "073-6544433",
+    "github": "haxen",
+    "twitter": "haxen"
 }, {
     "img": "profile_pic.png",
     "name": "Åsa Liljegren",
