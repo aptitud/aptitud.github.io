@@ -70,7 +70,7 @@
     "phone": "0722-002804",
     "services" : [
         { "name" : "twitter",     "url" : "http://twitter.com/johanleino" },
-        { "name" : "github",     "url" : "http://twitter.com/jole78" }
+        { "name" : "github",     "url" : "http://github.com/jole78" }
     ]
 }, {
     "img": "thomasg.jpg",
