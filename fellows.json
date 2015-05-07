@@ -29,7 +29,8 @@
     "github": "hugohaggmark",
     "others" : [
         { "name" : "instagram",     "url" : "https://instagram.com/hugohaggmark" }
-    ]
+    ],
+    "blog": "http://www.hugohaggmark.com"
 }, {
     "img": "profile_pic.png",
     "name": "Hampus Klarin",
