@@ -1,0 +1,21 @@
+<div class="row">
+    <div id="blogPage" class="max-content-width col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
+    </div>
+</div>
+<script>
+    setBackgroundColor("#3399CC");
+    if (window.blogdata) {
+        $("#blogPage").html(window.blogdata);
+    } else {
+        $.getJSON("http://aptitud-sthlm.tumblr.com/api/read/json?num=1&callback=?", function (result) {
+            window.blogdata = result.posts[0]["regular-body"];
+            $("#blogPage").html(window.blogdata);
+            // Fixup any string as h2 instead as the main page header
+            var header = $("#blogPage strong").first();
+            if (header) {
+                var inner = header.html();
+                header.replaceWith('<h2>' + inner + '</h2>');
+            }
+        });
+    }
+</script>

@@ -1,0 +1,132 @@
+<script id="fellow-template" type="text/x-handlebars-template">
+    <div class="col-xs-12 col-sm-6 col-lg-4 fellow">
+        <img src="images/medarbetare/{{img}}" class="img-responsive img-rounded">
+        <h4 class="text-center">{{name}}</h4>
+        <div class="contact text-center">
+            <ul>
+                <li>
+                    <a rel='email' href="[email]{{name}}"  target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                {{#if twitter}}
+                <li>
+                    <a href="https://twitter.com/{{twitter}}" target="_blank">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                </li>
+                {{/if}} {{#if phone}}
+                <li>
+                    <a href="tel:{{phone}}">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                </li>
+                {{/if}} {{#if github}}
+                <li>
+                    <a href="http://github.com/{{github}}" target="_blank">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                </li>
+                {{/if}}{{#if blog}}
+                <li>
+                    <a href="{{blog}}" target="_blank">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                </li>
+                {{/if}}                
+            </ul>
+        </div>
+        {{#if others}}
+        <div class="contact text-center">
+            <ul>
+            {{#each others}}
+                <li>
+                    <a href="{{this.url}}" target="_blank">
+                        <span class="fa-stack fa-lg">
+                        <i class="fa fa-{{this.name}} fa-stack-1x fa-inverse"></i>
+                    </span>
+                    </a>
+                </li>
+            {{/each}}
+            </ul>
+        </div>        
+        {{/if}}
+        <div class="desc text-justify">{{desc}}</div>
+    </div>
+</script>
+<div id="fellowPage" class="row">
+    <div class="col-xs-offset-1 col-xs-10">
+        <div id="fellow-list" class="row fellows" />
+    </div>
+</div>
+<script>
+function shuffle(o) {
+    for (var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+}
+
+function addClearFix(layoutDiv, index) {
+    if (index !== 0 && index % 3 === 0) {
+        layoutDiv.append("<div class='clearfix visible-lg-block'></div>");
+    }
+    if (index !== 0 && index % 2 === 0) {
+        layoutDiv.append("<div class='clearfix visible-sm-block'></div>");
+    }
+}
+
+function layoutFellows(fellows) {
+    var fellowTemplate = Handlebars.compile($("#fellow-template").html());
+    var layoutDiv = $("#fellow-list");
+
+    shuffle(fellows);
+    fellows.forEach(function(fellow, index) {
+        addClearFix(layoutDiv, index);
+        layoutDiv.append(fellowTemplate(fellow));
+    });
+}
+
+setBackgroundColor("#FF6633");
+
+function safeUpEmailAddresses() {
+    $("a[rel='email']").each(function() {
+        // Modify the mailto: value
+        var mailtoVal = $(this).attr('href');
+        mailtoVal = mailtoVal.replace(" ", ".");
+        mailtoVal = mailtoVal.toLowerCase();
+        mailtoVal = mailtoVal.replace("[email]", "mailto:");
+        mailtoVal = mailtoVal.replace("å", "a");
+        mailtoVal = mailtoVal.replace("ä", "a");
+        mailtoVal = mailtoVal.replace("ö", "o");
+        mailtoVal = mailtoVal.replace("ü", "u");
+
+        mailtoVal = mailtoVal + "@" + "aptitud" + ".se";
+
+        console.log(mailtoVal);
+
+        // Auto-generate title tags for users
+        var mailtoTitle = mailtoVal.replace("mailto:", "Maila till ");
+        $(this).attr('title', mailtoTitle);
+
+        // onClick Event
+        $(this).click(function() {
+            window.open(mailtoVal, "_blank");
+            return false;
+        });
+    });
+}
+
+$.getJSON("fellows.json").done(function(fellows) {
+    layoutFellows(fellows);
+    safeUpEmailAddresses();
+});
+</script>
