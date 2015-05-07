@@ -5,7 +5,11 @@
     "twitter": "per_jansson",
     "phone": "0702-662106",
     "github": "perjansson",
-    "blog": "http://thecuriousdeveloper.com"
+    "blog": "http://thecuriousdeveloper.com",
+    "others" : [
+        { "name" : "linkedin",       "url" : "https://se.linkedin.com/in/pichdude" },
+        { "name" : "stack-overflow", "url" : "http://stackoverflow.com/users/274426/per-jansson" }
+    ]
 }, {
     "img": "marcusn.jpg",
     "name": "Marcus Nylander",
