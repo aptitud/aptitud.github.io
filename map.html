@@ -43,16 +43,16 @@
 	    function onError(error) {
 	    	switch (error.code) {
 	    		case error.PERMISSION_DENIED:
-	    			$('#map').html("Du måste godkänna att vi får kolla din position... <a href='www.youtube.com/watch?v=JYCZs0m5rrU' target='_blank'>Det här var ju tråkigt...</a>");
+	    			$('#map').html("Du måste godkänna att vi får kolla din position... <a href='http://www.youtube.com/watch?v=JYCZs0m5rrU' target='_blank'>Det här var ju tråkigt...</a>");
 	    			break;
 	    		case error.POSITION_UNAVAILABLE:
-	    			$('#map').html("Tyvärr kan vi kan inte hitta din position... <a href='www.youtube.com/watch?v=JYCZs0m5rrU' target='_blank'>Det här var ju tråkigt...</a>");
+	    			$('#map').html("Tyvärr kan vi kan inte hitta din position... <a href='http://www.youtube.com/watch?v=JYCZs0m5rrU' target='_blank'>Det här var ju tråkigt...</a>");
 	    			break;
 	    		case error.TIMEOUT:
-	    			$('#map').html("Tyvärr tog det för lång tid att hitta din position... <a href='www.youtube.com/watch?v=JYCZs0m5rrU' target='_blank'>Det här var ju tråkigt...</a>");
+	    			$('#map').html("Tyvärr tog det för lång tid att hitta din position... <a href='http://www.youtube.com/watch?v=JYCZs0m5rrU' target='_blank'>Det här var ju tråkigt...</a>");
 	    			break;
 	    		case error.UNKNOWN_ERROR:
-	    			$('#map').html("Ånej, något gick fel... <a href='www.youtube.com/watch?v=JYCZs0m5rrU' target='_blank'>Det här var ju tråkigt...</a>");
+	    			$('#map').html("Ånej, något gick fel... <a href='http://www.youtube.com/watch?v=JYCZs0m5rrU' target='_blank'>Det här var ju tråkigt...</a>");
 	    			break;
 	    	}
 	    };
