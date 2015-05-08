@@ -1,47 +1,49 @@
 <script id="fellow-template" type="text/x-handlebars-template">
-    <div class="col-xs-12 col-sm-6 col-lg-4 fellow">
-        <img src="images/medarbetare/{{img}}" class="img-responsive img-rounded">
-        <h4 class="text-center">{{name}}</h4>
-        <div class="contact text-center">
-            <ul>
-                <li>
-                    <a rel='email' href="[email]{{name}}"  target="_blank">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-                {{#if phone}}
-                <li>
-                    <a href="tel:{{phone}}">
-                        <span class="fa-stack fa-lg">
-                        <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-                    </span>
-                    </a>
-                </li>
-                {{/if}}{{#if blog}}
-                <li>
-                    <a href="{{blog}}" target="_blank">
-                        <span class="fa-stack fa-lg">
-                        <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
-                    </span>
-                    </a>
-                </li>
-                {{/if}}             
-                {{#if services}}
-                    {{#each services}}
+    <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="fellow">
+            <img src="images/medarbetare/{{img}}" class="img-responsive img-rounded">
+            <h4 class="text-center">{{name}}</h4>
+            <div class="contact text-center">
+                <ul>
                     <li>
-                        <a href="{{this.url}}" target="_blank">
+                        <a rel='email' href="[email]{{name}}"  target="_blank">
                             <span class="fa-stack fa-lg">
-                            <i class="fa fa-{{this.name}} fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {{#if phone}}
+                    <li>
+                        <a href="tel:{{phone}}">
+                            <span class="fa-stack fa-lg">
+                            <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
                         </span>
                         </a>
                     </li>
-                    {{/each}}
-                {{/if}}
-            </ul>
-        </div>        
-        <div class="desc text-justify">{{desc}}</div>
+                    {{/if}}{{#if blog}}
+                    <li>
+                        <a href="{{blog}}" target="_blank">
+                            <span class="fa-stack fa-lg">
+                            <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+                        </span>
+                        </a>
+                    </li>
+                    {{/if}}             
+                    {{#if services}}
+                        {{#each services}}
+                        <li>
+                            <a href="{{this.url}}" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                <i class="fa fa-{{this.name}} fa-stack-1x fa-inverse"></i>
+                            </span>
+                            </a>
+                        </li>
+                        {{/each}}
+                    {{/if}}
+                </ul>
+            </div>        
+            <div class="desc text-justify">{{desc}}</div>
+        </div>
     </div>
 </script>
 <div id="fellowPage" class="row">
@@ -91,7 +93,7 @@ function safeUpEmailAddresses() {
 
         mailtoVal = mailtoVal + "@" + "aptitud" + ".se";
 
-        console.log(mailtoVal);
+        //console.log(mailtoVal);
 
         // Auto-generate title tags for users
         var mailtoTitle = mailtoVal.replace("mailto:", "Maila till ");
@@ -108,5 +110,47 @@ function safeUpEmailAddresses() {
 $.getJSON("fellows.json").done(function(fellows) {
     layoutFellows(fellows);
     safeUpEmailAddresses();
+    addDnDSupport();
 });
+
+var dragSrc = null;
+var addDnDSupport = function() {
+    $(".fellow").each(function(index) {
+        $(this).attr('draggable', 'true');
+        $(this).bind('dragstart', function(e) {
+            $(this).fadeTo("slow", 0.4);
+            dragSrc = this;
+            e.originalEvent.dataTransfer.effectAllowed = 'move';
+            e.originalEvent.dataTransfer.setData('text/html', $(this).html());
+        });
+        $(this).bind('dragover', function(e) {
+            if (e.preventDefault) {
+                e.preventDefault();
+            }
+            return false;
+        });
+        $(this).bind('dragenter', function(e) {
+
+        });
+        $(this).bind('dragleave', function(e) {
+
+        });
+        $(this).bind('drop', function(e) {
+            if (e.stopPropagation) {
+                e.stopPropagation();
+            }
+            if (dragSrc != this) {
+                dragSrc.innerHTML = this.innerHTML;
+                this.innerHTML = e.originalEvent.dataTransfer.getData('text/html');
+                $(dragSrc).fadeTo("slow", 1.0);
+                $(this).fadeTo("slow", 1.0);
+            }
+            return false;
+        });
+        $(this).bind('dragend', function(e) {            
+
+        });
+    }
+)};
+
 </script>
