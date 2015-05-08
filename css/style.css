@@ -199,3 +199,15 @@ h1, h2, h3, h4, h5, p, li {
   -khtml-user-drag: element;
   -webkit-user-drag: element;
 }
+
+.top-buffer { 
+    margin-top: 20px; 
+}
+
+.bottom-buffer { 
+    margin-bottom: 20px; 
+}
+
+.map.showing {
+    border: 10px solid white;
+}
