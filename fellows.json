@@ -92,7 +92,14 @@
 }, {
     "img": "profile_pic.png",
     "name": "Åsa Liljegren",
-    "desc": "Utvecklare och arkitekt i .Net-världen som brinner för att lösa svåra problem genom att förenkla kod, arbetssätt och processer. Gäller allt från Javascript till Continuous Delivery."
+    "desc": "Utvecklare och arkitekt i .Net-världen som brinner för att lösa svåra problem genom att förenkla kod, arbetssätt och processer. Gäller allt från Javascript till Continuous Delivery.",
+    "phone": "0709-694760",
+    "blog": "http://reallyshouldblogthis.blogspot.se",
+    "services" : [
+        { "name" : "twitter",       "url" : "http://twitter.com/_asa" },
+        { "name" : "github",        "url" : "http://github.com/asalilje" },
+        { "name" : "linkedin",      "url" : "https://www.linkedin.com/pub/%C3%A5sa-liljegren/22/5aa/ba2"}
+    ]
 }, {
     "img": "peterq.jpg",
     "name": "Peter Qwärnström",
