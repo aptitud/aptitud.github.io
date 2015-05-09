@@ -221,4 +221,8 @@ video#engelberg {
 
 .inspiration-text {
     color: #fff;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 1px 25px 25px 25px;
+    border-radius: 10px;
 }
