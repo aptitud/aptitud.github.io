@@ -4,7 +4,19 @@
         <section class="inspiration-text">
             Från senaste konferensen i Engelberg, Schweiz...
         </section>
-        <video id="engelberg" src="videos/engelberg.m4v" type="video/m4v" width="100%" preload="auto" muted autoplay loop></video>
+        <video id="engelberg" width="100%" preload="auto" poster="videos/engelberg/engelberg.jpg" muted autoplay loop onended="var v=this;setTimeout(function(){v.play()},300)">
+            <source src="videos/engelberg/engelberg.m4v" type="video/mp4" />
+            <source src="videos/engelberg/engelberg.webm" type="video/webm" />
+            <source src="videos/engelberg/engelberg.ogv" type="video/ogg" />
+            <source src="videos/engelberg/engelberg.mp4" />
+            <object type="application/x-shockwave-flash" data="videos/engelberg/flashfox.swf" width="853" height="480" style="position:relative;">
+                <param name="movie" value="videos/engelberg/flashfox.swf" />
+                <param name="allowFullScreen" value="true" />
+                <param name="flashVars" value="autoplay=true&controls=false&fullScreenEnabled=false&posterOnEnd=true&loop=true&poster=videos/engelberg/engelberg.jpg&src=engelberg.m4v" />
+                 <embed src="videos/engelberg/flashfox.swf" width="853" height="480" style="position:relative;"  flashVars="autoplay=true&controls=false&fullScreenEnabled=false&posterOnEnd=true&loop=true&poster=videos/engelberg/engelberg.jpg&src=engelberg.m4v"  allowFullScreen="true" wmode="transparent" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer_en" />
+                <img alt="engelberg" src="videos/engelberg/engelberg.jpg" style="position:absolute;left:0;" width="100%" title="Video playback is not supported by your browser" />
+            </object>
+        </video>
     </div>
 </div>
 
