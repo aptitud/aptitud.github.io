@@ -149,4 +149,8 @@
     "img": "profile_pic.png",
     "name": "Andreas Nilsson",
     "desc": "En kodande häxmästare som svär när saker inte går som han vill (vilket nästan aldrig händer). Hitills aldrig fångad på corporate-bilder."
+}, {
++    "img": "profile_pic.png",
++    "name": "John Magnusson",
++    "desc": "Vinterälskande utvecklare från Norrbottenskusten som alltid vill ha det lilla extra. Trivs lika bra att utveckla system som team."
 }]
