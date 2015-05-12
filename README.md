@@ -7,12 +7,12 @@ För att ändra direkt i Github: Öppna filen du vill ändra och klicka på "Edi
 För att lägga till filer behöver de läggas till i repot. Det kan göras med Git, Github for Windows eller Github for Mac
 
 ## Installera och köra local
-1. git clone https://github.com/aptitud/AptiWeb2.0.git
-2. npm install (npm has to be installed on your machine)
-3. grunt server
+1. ```git clone https://github.com/aptitud/aptitud.github.io.git```
+2. ```npm install``` (Node och npm behöver vara installerat på din dator)
+3. ```grunt server```
 4. Klicka här [http://localhost:8080/?local=true](http://localhost:8080/?local=true)
 
 ## Deploy:a till Github pages
-1. git push origin master
+1. ```git push origin master```
 
 
