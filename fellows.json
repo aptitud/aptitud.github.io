@@ -154,12 +154,12 @@
     "name": "John Magnusson",
     "desc": "Vinterälskande utvecklare från Norrbottenskusten som alltid vill ha det lilla extra. Trivs lika bra att utveckla system som team."
 },{
-    "img": " ",
-	"name": "Olof Sandström",
-	"desc": "Jovialisk och social projektledare som gillar att hjälpa IT och affärsverksamheten närmre varandra. Har örnkoll på siffror, leveranser, planer, styrgrupper, intressenter och älskar att kommunicera. Matlagande sambo med Åsa och tvåbarnsfar som älskar bollsporter både som utövare, som tränare och även passivt tillbakalutad samt att pyssla med tomten och huset",
-	"phone": "076-100 30 33",
-	"services" : [
+    "img": "profile_pic.png",
+    "name": "Olof Sandström",
+    "desc": "Jovialisk och social projektledare som gillar att hjälpa IT och affärsverksamheten närmre varandra. Har örnkoll på siffror, leveranser, planer, styrgrupper, intressenter och älskar att kommunicera. Matlagande sambo med Åsa och tvåbarnsfar som älskar bollsporter både som utövare, som tränare och även passivt tillbakalutad samt att pyssla med tomten och huset",
+    "phone": "076-100 30 33",
+    "services" : [
         { "name" : "linkedin",       "url" : " https://se.linkedin.com/pub/olof-sandström/1/21a/a0b" },
-        { "name" : "instagram",     "url" : " https://instagram.com/olof.sa" }        
-	 ]
+        { "name" : "instagram",     "url" : " https://instagram.com/olof.sa" }
+     ]
 }]
