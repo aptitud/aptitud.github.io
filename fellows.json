@@ -105,9 +105,13 @@
     "name": "Peter Qwärnström",
     "desc": "Vetgirig och nyfiken .Net utvecklare som gillar folk, skärgården och nypistade backar. Gift. Har två döttrar plus en lurvig katt."
 }, {
-    "img": "profile_pic.png",
+    "img": "mikaela.jpg",
     "name": "Mikael Ahlinder",
-    "desc": "Kreativ .Net utvecklare med ett öga för design. Fotbollstok som gillar enkla lösningar, snabba beslut och långväga resor."
+    "desc": "Kreativ .Net utvecklare med ett öga för design. Fotbollstok som gillar enkla lösningar, snabba beslut och långväga resor.",
+    "services" : [
+        { "name" : "linkedin",  "url" : " https://se.linkedin.com/in/mikaelahlinder" },
+        { "name" : "twitter", "url" : " http://twitter.com/ahlinder" }
+     ]
 }, {
     "img": "roberto.jpg",
     "name": "Robert Olofsson",
