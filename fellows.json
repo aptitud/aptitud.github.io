@@ -43,7 +43,8 @@
     "services" : [
         { "name" : "github",        "url" : "http://github.com/hampusklarin" },        
         { "name" : "linkedin",      "url" : "https://www.linkedin.com/in/hampusklarin" },
-        { "name" : "key",           "url" : "https://keybase.io/hampusklarin" }
+        { "name" : "key",           "url" : "https://keybase.io/hampusklarin" },
+        { "name" : "instagram",     "url" : "https://instagram.com/hampusklarin" }
     ]
 }, {
     "img": "andersl.jpg",
