@@ -76,7 +76,12 @@
 }, {
     "img": "thomasg.jpg",
     "name": "Thomas Granbacka",
-    "desc": "Javautvecklare som älskar enkla och vackra lösningar. Gift. Två döttrar. Passionerad fotograf. Har en egen gokart. Har spelat blockflöjt och altsaxofon."
+    "desc": "Javautvecklare som älskar enkla och vackra lösningar. Gift. Två döttrar. Passionerad fotograf. Har en egen gokart. Har spelat blockflöjt och altsaxofon.",
+    "services" : [
+        { "name" : "twitter",     "url" : "http://twitter.com/tgranbacka" },
+        { "name" : "instagram",     "url" : "https://instagram.com/tgranbacka/" },
+        { "name" : "linkedin",      "url" : "https://www.linkedin.com/in/tgranbacka"}
+    ]
 }, {
     "img": "gustavd.jpg",
     "name": "Gustav Dahlman",
@@ -91,7 +96,7 @@
         { "name" : "github",     "url" : "http://github.com/haxen" }
     ]
 }, {
-    "img": "profile_pic.png",
+    "img": "asal.jpg",
     "name": "Åsa Liljegren",
     "desc": "Utvecklare och arkitekt i .Net-världen som brinner för att lösa svåra problem genom att förenkla kod, arbetssätt och processer. Gäller allt från Javascript till Continuous Delivery.",
     "phone": "0709-694760",
@@ -143,7 +148,7 @@
     "name": "Jessica Wikander",
     "desc": "Målfokuserad projektledare från norrlandsskogen. Grym bilförare och hyffsat mogen. Maraton som gammal merit. Skapar konstverk med kritor utan slit."
 }, {
-    "img": "profile_pic.png",
+    "img": "jonasa.jpg",
     "name": "Jonas Ahnlund",
     "desc": "Systemutvecklande pappa med passion för matlagning, old-school gaming och kodkvalitet (inte nödvändigtvis rankat i den ordningen)."
 }, {
@@ -151,11 +156,11 @@
     "name": "Fredric Ståhlgren",
     "desc": "Brinner för att ha kul i jobbet. Gillar att få organisationer och team att jobba effektivt och tillsammans. Ledare med utgångspunkt i både individen, gruppen, affären och tekniken."
 }, {
-    "img": "profile_pic.png",
+    "img": "andreasn.jpg",
     "name": "Andreas Nilsson",
     "desc": "En kodande häxmästare som svär när saker inte går som han vill (vilket nästan aldrig händer). Hitills aldrig fångad på corporate-bilder."
 }, {
-    "img": "profile_pic.png",
+    "img": "johnm.jpg",
     "name": "John Magnusson",
     "desc": "Vinterälskande utvecklare från Norrbottenskusten som alltid vill ha det lilla extra. Trivs lika bra att utveckla system som team."
 }, {
