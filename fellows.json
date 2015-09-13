@@ -178,7 +178,7 @@
     "desc": "Engagerad och ambitiös utvecklare inom .NET och webb som vill göra skillnad. Husse och Södermalmsbo som gillar tiodans, klättring, politik och äventyr.",
     "phone": "072-213 55 51",
     "services" : [
-        { "name" : "linkedin", "url" : "https://se.linkedin.com/in/christianfredh },
+        { "name" : "linkedin", "url" : "https://se.linkedin.com/in/christianfredh" },
         { "name" : "twitter", "url" : "https://twitter.com/christianfredh" },
         { "name" : "github", "url" : "https://github.com/christianfredh" },
         { "name" : "instagram", "url" : "https://instagram.com/christianfredh/" }
