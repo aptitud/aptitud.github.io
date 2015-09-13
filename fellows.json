@@ -181,6 +181,7 @@
         { "name" : "linkedin", "url" : "https://se.linkedin.com/in/christianfredh" },
         { "name" : "twitter", "url" : "https://twitter.com/christianfredh" },
         { "name" : "github", "url" : "https://github.com/christianfredh" },
-        { "name" : "instagram", "url" : "https://instagram.com/christianfredh/" }
+        { "name" : "instagram", "url" : "https://instagram.com/christianfredh/" },
+        { "name" : "stack-overflow", "url" : "http://stackoverflow.com/users/928531/christian-fredh" }
      ]
 }]
