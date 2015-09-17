@@ -184,4 +184,12 @@
         { "name" : "instagram", "url" : "https://instagram.com/christianfredh/" },
         { "name" : "stack-overflow", "url" : "http://stackoverflow.com/users/928531/christian-fredh" }
      ]
+},{
+    "img": "profile_pic.png",
+    "name": "Emma Ullberg",
+    "desc": "Driven och nyfiken teamlead med rötterna i koden. Brinner för agil systemutveckling, teamdynamik och den egna punchverandan. Har en kort men intensiv karriär som smyckesdesigner bakom sig.",
+    "phone": "070-6810902",
+    "services" : [
+        { "name" : "twitter",        "url" : "https://twitter.com/emmaullberg" }
+    ]
 }]
