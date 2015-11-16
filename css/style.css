@@ -59,6 +59,7 @@ body {
 .fellow {
     padding-right: 30px;
     padding-left: 30px;
+    padding-top: 30px;
     color: #FFF;
     min-height: 350px;
 }
@@ -82,6 +83,7 @@ body {
 .fellow .contact ul {
     margin: 0;
     padding: 0;
+    height: 45px;
 }
 .fellow .contact ul li {
     list-style-type: none;
