@@ -74,7 +74,7 @@ body {
 
 
 .fellow > h4 {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 .fellow img {
     height: 125px;
@@ -83,7 +83,7 @@ body {
 .fellow .contact ul {
     margin: 0;
     padding: 0;
-    height: 55px;
+    min-height: 30px;
 }
 .fellow .contact ul li {
     list-style-type: none;
