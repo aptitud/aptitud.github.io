@@ -3,9 +3,7 @@
         content: attr(title);
         display: block;
         max-width: 200px;
-        /*font-size: 14px;
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);*/
+        padding-left: 5px;
     }
 
     ul.polaroids a {
@@ -75,20 +73,15 @@
         margin: 0 15px 27px 15px;
         width: auto;
         padding: 10px 10px 15px;
-        text-align: center;
         font-family: 'Gloria Hallelujah', cursive;
         text-decoration: none;
         color: #333;
         font-size: 14px;
-        /*-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-        -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-        -webkit-transform: rotate(-2deg);
-        -webkit-transition: -webkit-transform .15s linear;*/
     }
 
     ul.polaroids img {
         max-width: 200px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     ul.polaroids li {
@@ -97,9 +90,18 @@
         width: 300px;
     }
 
+    .location {
+      display: block;
+      font-size: 10px;
+      text-align: left;
+      padding: 0 0 0 5px;
+      margin-bottom: 5px;
+    }
+
     #instacontainer {
         max-width: 1300px;
         margin: 0 auto;
+        text-align: center;
     }
 </style>
 
@@ -114,7 +116,7 @@
     setBackgroundColor("#784e90");
     $.getJSON("http://aptigram.apphb.com/", function (json) {
         $(json).each(function (index, image) {
-            $('#instacontainer').append("<li><a href='http://www.instagram.com/aptitud_sthlm/' title='" + image.caption + "'><img src='" + image.url + "' alt='pelle'></a></li>");
+            $('#instacontainer').append("<li><a href='http://www.instagram.com/aptitud_sthlm/' title='" + image.caption + "'><img src='" + image.url + "'/><span class='location'>" + image.location +"</span></a></li>");
         });
     });
 </script>
