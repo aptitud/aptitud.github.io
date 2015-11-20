@@ -1,0 +1,120 @@
+<style>
+    ul.polaroids a:after {
+        content: attr(title);
+        display: block;
+        max-width: 200px;
+        /*font-size: 14px;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);*/
+    }
+
+    ul.polaroids a {
+        -webkit-transform: rotate(-2deg);
+        -moz-transform: rotate(-2deg);
+    }
+
+    /* Rotate all even images 2 degrees */
+    ul.polaroids li:nth-child(even) a {
+        -webkit-transform: rotate(2deg);
+        -moz-transform: rotate(2deg);
+    }
+
+    /* Don't rotate every third image, but offset its position */
+    ul.polaroids li:nth-child(3n) a {
+        -webkit-transform: none;
+        -moz-transform: none;
+        position: relative;
+        top: -5px;
+    }
+
+    /* Rotate every fifth image by 5 degrees and offset it */
+    ul.polaroids li:nth-child(5n) a {
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        position: relative;
+        right: 5px;
+    }
+
+    /* Keep default rotate for every eighth, but offset it */
+    ul.polaroids li:nth-child(8n) a {
+        position: relative;
+        top: 8px;
+        right: 5px;
+    }
+
+    /* Keep default rotate for every eleventh, but offset it */
+    ul.polaroids li:nth-child(11n) a {
+        position: relative;
+        top: 3px;
+        left: -5px;
+    }
+
+    ul.polaroids a:hover {
+        -webkit-transform: scale(1.25) !important;
+        -moz-transform: scale(1.25) !important;
+        position: relative;
+        z-index: 5;
+    }
+    /* Add drop shadows and smooth out the transition (Safari only) */
+    ul.polaroids a {
+        -webkit-transition: -webkit-transform .15s linear;
+        -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+        -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    }
+
+    /* On hover, darken the shadows a bit */
+    ul.polaroids a {
+        -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+        -moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+    }
+
+    ul.polaroids a {
+        background-color: #fff !important;
+        display: inline;
+        float: left;
+        margin: 0 15px 27px 15px;
+        width: auto;
+        padding: 10px 10px 15px;
+        text-align: center;
+        font-family: 'Gloria Hallelujah', cursive;
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        /*-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+        -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+        -webkit-transform: rotate(-2deg);
+        -webkit-transition: -webkit-transform .15s linear;*/
+    }
+
+    ul.polaroids img {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+
+    ul.polaroids li {
+        display: inline-block;
+        list-style-type: none;
+        width: 300px;
+    }
+
+    #instacontainer {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+</style>
+
+<div class="row">
+    <div id="instapage" class="col-xs-offset-1 col-xs-10">
+        <ul class="polaroids" id="instacontainer">
+        </ul>
+    </div>
+</div>
+
+<script>
+    setBackgroundColor("#784e90");
+    $.getJSON("http://aptigram.apphb.com/", function (json) {
+        $(json).each(function (index, image) {
+            $('#instacontainer').append("<li><a href='http://www.instagram.com/aptitud_sthlm/' title='" + image.caption + "'><img src='" + image.url + "' alt='pelle'></a></li>");
+        });
+    });
+</script>
