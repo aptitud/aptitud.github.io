@@ -115,6 +115,7 @@
 <script type="text/javascript">
     setBackgroundColor("#784e90");
     $.getJSON("instagram.json", function (json) {
+        console.log('json', json);
         $(json).each(function (index, image) {
             $('#instacontainer').append("<li><a href='http://www.instagram.com/aptitud_sthlm/' title='" + image.caption + "'><img src='" + image.url + "'/><span class='location'>" + image.location +"</span></a></li>");
         });
