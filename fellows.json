@@ -140,10 +140,6 @@
     "name": "Johannes Gunnbäck",
     "desc": "Filmnörd, dykare, systemutvecklare. Har en näsa för problemlösning och en passion för kodkvalitet, TDD och agile. Tycker det är lika roligt att utvecklar frontend- som backendapplikationer."
 }, {
-    "img": "ankih.jpg",
-    "name": "Anki Hedkvist",
-    "desc": "Enträgen testledare och testare som inte ger sig i första taget. Tvåbarnsmor som gillar musik, vin och ost. Drivs av att allt alltid kan bli bättre. F.d. ridlärare och erfaren flugfiskare."
-}, {
     "img": "jessica-w.jpg",
     "name": "Jessica Wikander",
     "desc": "Målfokuserad projektledare från norrlandsskogen. Grym bilförare och hyffsat mogen. Maraton som gammal merit. Skapar konstverk med kritor utan slit."
@@ -155,10 +151,6 @@
     "img": "profile_pic.png",
     "name": "Fredric Ståhlgren",
     "desc": "Brinner för att ha kul i jobbet. Gillar att få organisationer och team att jobba effektivt och tillsammans. Ledare med utgångspunkt i både individen, gruppen, affären och tekniken."
-}, {
-    "img": "andnil.jpg",
-    "name": "Andreas Nilsson",
-    "desc": "En kodande häxmästare som svär när saker inte går som han vill (vilket nästan aldrig händer). Hitills aldrig fångad på corporate-bilder."
 }, {
     "img": "johnm.jpg",
     "name": "John Magnusson",
