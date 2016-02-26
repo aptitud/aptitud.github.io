@@ -17,6 +17,7 @@
 }, {
     "img": "marham.jpg",
     "name": "Marcus Hammarberg",
+    "phone": "0768-725878",
     "desc": "Coach med agilt/lean fokus och stark koppling till det praktiska. .NET / JavaScript utvecklare i botten. Motto: Få agile att fungera i praktiken! Gift, 3 barn, bor i Indonesien. Känd från TV",
     "blog": "http://www.marcusoft.net",
     "services" : [
