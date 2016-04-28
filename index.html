@@ -6,10 +6,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
-  <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah'>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="bower_components/Materialize/dist/css/materialize.min.css" media="screen,projection">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <!-- Favicon -->
@@ -38,22 +37,21 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-aptitud navbar">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="aptitud-navbar-brand" href="#" onclick="routeTo('start')">
-          <img alt="Brand" src="images/favicon/favicon-32.png" style="display: none">
-        </a>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo"><img alt="Brand" src="images/favicon/favicon-60.png"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#start">Aptitud</a></li>
+          <li><a href="#philosophy">Filosofi</a></li>
+          <li><a href="#aptigram">Instagram</a></li>
+          <li><a href="#aptitudDay">Aptituddag</a></li>
+          <li><a href="#fellow">Medarbetare</a></li>
+          <li><a href="#map">Hitta hit</a></li>
+          <li><a href="#blog">Blogg</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
           <li><a href="#start">Aptitud</a></li>
           <li><a href="#philosophy">Filosofi</a></li>
           <li><a href="#aptigram">Instagram</a></li>
@@ -63,16 +61,24 @@
           <li><a href="#blog">Blogg</a></li>
         </ul>
       </div>
-    </div>
-  </nav>
-
-  <div class="container-fluid" id="main-container">
-    <div id="includedContent"></div>
+    </nav>
   </div>
+
+  <main class="container" id="main-container">
+    <div class="row">
+      <div class="col s12 m10 offset-m1">
+        <div id="includedContent" class="flow-text"></div>
+      </div>
+    </div>
+  </main>
 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/handlebars/handlebars.js"></script>
+
+  <!-- Materialize -->
+  <script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
+
   <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script>
 
   <!-- Google Analytics -->

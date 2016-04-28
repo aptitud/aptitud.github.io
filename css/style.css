@@ -1,230 +1,28 @@
-*, *::after, *::before {
-  box-sizing: border-box;
+nav a {
+    -webkit-font-smoothing: antialiased;
 }
 
-html, body {
-    height: 100%;
+article {
+  margin-top: 30px;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: lighter;
-    background-color: transparent;
-    color: #2A363B;
-    margin: 0;
+article a {
+  color: #cccccc;
+  text-decoration: underline;
 }
 
-#main-container {
-    height: 85%;
+article a:hover {
+  color: #B8B8B8
 }
 
-#includedContent {
-    padding: 2em 2em 4em 2em;
-    height: 100%;
+.fellow.card-panel {
+  margin-bottom: 50px;
 }
 
-.aligner {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contact ul li {
+    display: inline;
 }
 
-.align-center {
-  -webkit-box-flex: 0;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  max-width: 100%;
-}
-
-.home-image {
-    width: 70%;
-}
-#map-image {
-    width: 100%;
-}
-.max-content-width {
-    max-width: 800px;
-}
-.fellows .row {
-    margin: 10px 10px 30px 10px;
-}
-.fellow {
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 30px;
-    color: #FFF;
-    min-height: 350px;
-}
-
-@media (max-width: 767px) {
-  .fellow {
-    min-height: 0px;
-    padding-bottom: 50px;
-  }
-}
-
-
-
-.fellow > h4 {
-    margin-bottom: 10px;
-}
-.fellow img {
-    height: 125px;
-    margin: 0 auto;
-}
-.fellow .contact ul {
-    margin: 0;
-    padding: 0;
-    min-height: 30px;
-}
-.fellow .contact ul li {
-    list-style-type: none;
-    display: inline-block;
-}
-
-/*Bootstrap navigation styles*/
-
-.aptitud-navbar-brand {
-    float: left;
-    height: 50px;
-    padding: 5px 5px 5px 15px;
-    font-size: 18px;
-    line-height: 20px;
-}
-.navbar-aptitud {
-    background-color: transparent !important;
-}
-.navbar-aptitud .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
-    font-size: 1.2em;
-    line-height: 1;
-}
-.navbar-aptitud .navbar-collapse {
-    text-align: center;
-}
-.navbar-aptitud .navbar-brand {
-    color: #2a363b;
-}
-.navbar-aptitud .navbar-brand:hover, .navbar-aptitud .navbar-brand:focus {
-    color: #2a363b;
-}
-.navbar-aptitud .navbar-text {
-    color: #2a363b;
-}
-.navbar-aptitud ul.nav a:hover {
-    background-color: transparent !important;
-}
-.navbar-aptitud ul.nav a:visited {
-    background-color: transparent !important;
-}
-.navbar-aptitud .navbar-nav > li > a {
-    color: #fff;
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-}
-.navbar-aptitud .navbar-nav > li > a:hover, .navbar-aptitud .navbar-nav > li > a:focus {
-    color: #2a363b;
-}
-.navbar-aptitud .navbar-nav > .active > a, .navbar-aptitud .navbar-nav > .active > a:hover, .navbar-aptitud .navbar-nav > .active > a:focus {
-    color: #2a363b;
-    background-color: transparent !important;
-}
-.navbar-aptitud .navbar-nav > .open > a, .navbar-aptitud .navbar-nav > .open > a:hover, .navbar-aptitud .navbar-nav > .open > a:focus {
-    color: #2a363b;
-    background-color: transparent !important;
-}
-.navbar-aptitud .navbar-toggle {
-    border-color: transparent;
-}
-.navbar-aptitud .navbar-toggle:hover, .navbar-aptitud .navbar-toggle:focus {
-    background-color: transparent;
-}
-.navbar-aptitud .navbar-toggle .icon-bar {
-    background-color: #2a363b;
-}
-.navbar-aptitud .navbar-collapse, .navbar-aptitud .navbar-form {
-    border: 0px
-}
-.navbar-aptitud .navbar-link {
-    color: #2a363b;
-}
-.navbar-aptitud .navbar-link:hover {
-    color: #2a363b;
-}
-@media (max-width: 767px) {
-    .navbar-nav > li > a {
-        height: 1.8em;
-    }
-    .navbar-aptitud .navbar-nav .open .dropdown-menu > li > a {
-        color: #2a363b;
-    }
-    .navbar-aptitud .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-aptitud .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #2a363b;
-    }
-    .navbar-aptitud .navbar-nav .open .dropdown-menu > .active > a, .navbar-aptitud .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-aptitud .navbar-nav .open .dropdown-menu > .active > a:focus {
-        color: #2a363b;
-        background-color: transparent !important;
-    }
-}
-a {
-    color: #dadada;
-}
-a:visited, a:active, a:hover, a:link, a:focus {
-    background-color: transparent !important;
-}
-h1, h2, h3, h4, h5, p, li {
-    color: #ffffff;
-}
-#tweetMapFrame {
-    height: 80vh;
-    width: 90vw;
-}
-
-/* Prevent the text contents of draggable elements from being selectable. */
-[draggable] {
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  /* Required to make elements draggable in old WebKit */
-  -khtml-user-drag: element;
-  -webkit-user-drag: element;
-}
-
-.top-buffer { 
-    margin-top: 20px; 
-}
-
-.bottom-buffer { 
-    margin-bottom: 20px; 
-}
-
-.map.showing {
-    border: 10px solid white;
-}
-
-video#engelberg {
-    position: fixed; right: 0; bottom: 0;
-    min-width: 100%; min-height: 100%;
-    width: auto; height: auto; z-index: -100;
-    background-size: cover;
-}
-
-.inspiration-text {
-    color: #fff;
-    background: rgba(255,255,255,0.15);
-    border: 1px solid rgba(255,255,255,0.15);
-    padding: 1px 25px 25px 25px;
-    border-radius: 10px;
+.contact .fa {
+  color: #000;
 }
