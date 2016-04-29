@@ -202,3 +202,9 @@ section.fellows {
 .section-img {
   float: left;
   margin: 20px 50px 20px 0; }
+
+.hidden-link {
+  color: #fff; }
+
+.hidden-link:hover {
+  color: #ee5555; }
