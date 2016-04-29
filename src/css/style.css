@@ -16,7 +16,7 @@ main > section {
   overflow-y: hidden;
   padding: 3vh 0;
   position: relative;
-  transition: max-height 1.5s ease; }
+  transition: max-height 2s ease; }
   main > section .expand {
     position: absolute;
     bottom: 0;
@@ -35,7 +35,7 @@ main > section {
       display: block;
       font-size: 150px;
       text-align: center;
-      text-shadow: 0px 10px 0 rgba(0, 0, 0, 0.15);
+      text-shadow: 0 10px 0 rgba(0, 0, 0, 0.15);
       opacity: 0.3;
       transition: opacity 0.5s ease; }
       main > section .expand .fa:before {
@@ -62,94 +62,56 @@ main > section {
 
 .aptitud-day {
   background-color: #7a9752; }
+  .aptitud-day .card-panel {
+    background-color: #eee;
+    color: #000; }
 
-/*
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-html,
-body {
-  height: 100%;
-}
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: lighter;
-  background-color: transparent;
-  color: #2A363B;
-  margin: 0;
-}
-#main-container {
-  //    height: 85%;
-}
-.container-fluid {
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-#includedContent {
-  padding: 4em 2em;
-  height: 100%;
-}
-.aligner {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.align-center {
-  -webkit-box-flex: 0;
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  max-width: 100%;
-}
-.home-image {
-  width: 50%;
-}
-#map-image {
-  width: 100%;
-}
-.max-content-width {
-  max-width: 800px;
-}
-.fellows .row {
-  margin: 10px 10px 30px;
-}
-.fellow {
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-top: 30px;
-  color: #FFF;
-  min-height: 350px;
-  @media (max-width: 767px) {
-    min-height: 0;
-    padding-bottom: 50px;
-  }
-  > h4 {
-    margin-bottom: 10px;
-  }
-  img {
-    height: 125px;
-    margin: 0 auto;
-  }
-  .contact {
-    ul {
-      margin: 0;
+.fellows {
+  background-color: #FF6633; }
+  .fellows .fellow {
+    padding: 30px; }
+    .fellows .fellow .card-panel {
+      overflow: hidden;
       padding: 0;
-      min-height: 30px;
-      li {
-        list-style-type: none;
-        display: inline-block;
-      }
-    }
-  }
-}
-*/
+      background-color: #eee;
+      color: #000; }
+      .fellows .fellow .card-panel .row {
+        padding: 20px; }
+      .fellows .fellow .card-panel .info {
+        position: relative;
+        margin-bottom: 0; }
+        .fellows .fellow .card-panel .info:before {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 60px;
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e859a+100&0+0,1+100 */
+          background: -moz-linear-gradient(top, rgba(238, 238, 238, 0) 0, #eeeeee 30px);
+          /* FF3.6-15 */
+          background: -webkit-linear-gradient(top, rgba(238, 238, 238, 0) 0, #eeeeee 30px);
+          /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom, rgba(238, 238, 238, 0) 0, #eeeeee 30px);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
+          /* IE6-9 */ }
+        .fellows .fellow .card-panel .info .desc {
+          height: 370px;
+          overflow-y: scroll; }
+      .fellows .fellow .card-panel .contact {
+        padding: 0 30px;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.05);
+        clear: both; }
+        .fellows .fellow .card-panel .contact .col {
+          padding: 0; }
+      .fellows .fellow .card-panel ul > li {
+        display: inline; }
+        .fellows .fellow .card-panel ul > li .fa {
+          font-size: 30px; }
+
+.section-img {
+  float: left;
+  margin: 20px 50px 20px 0; }

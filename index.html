@@ -8,7 +8,11 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
   <link rel="stylesheet" href="src/css/style.css">
+
+  <script src="bower_components/handlebars/handlebars.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,16 +24,12 @@
     </section>
     <section class="about">
       <div class="container row">
-        <div class="col s12 m4">
-          <img class="responsive-img" src="images/klotter.png">
-        </div>
-        <div class="col s12 m8 flow-text">
+        <div class="col s12 flow-text">
           <h2>Vi bygger Sveriges bästa arbetsplats för IT-konsulter</h2>
+          <img class="responsive-img section-img" src="images/klotter.png">
           <p> Vi bygger Sveriges bästa arbetsplats för IT-konsulter där fokus är att ha roligt i sitt arbete. En plats dit människor söker sig naturligt. En plats dit alla är välkomna. Välkomna att utbyta ideer, att inspireras och att inspirera. </p>
 
-          <p> En plats för oss som är seriösa utan att ta oss själva på för stort allvar.</p>
-
-          <p> Vi vill ha roliga kollegor och ha tid att umgås med dem - på arbetstid. Bl a genom Aptituddagar, Blixttalsluncher, bolagsmöten och konferenser. </p>
+          <p> En plats för oss som är seriösa utan att ta oss själva på för stort allvar. Vi vill ha roliga kollegor och ha tid att umgås med dem - på arbetstid. Bl a genom Aptituddagar, Blixttalsluncher, bolagsmöten och konferenser. </p>
 
           <p> Vi tror på transparens. All information är synlig och vi tycker att om man törs fatta ett beslut och stå för det, så gör det! Vi litar på varandras sunda förnuft och omdöme. Blir det fel rättar vi till det och blir lite klokare. </p>
 
@@ -38,16 +38,14 @@
         </div>
       </div>
       <div class="expand">
-        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        <i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i>
       </div>
     </section>
     <section class="aptitud-day">
       <div class="container row">
-        <div class="col s12 m4">
-          <img src="images/aptituddagen.png" class="responsive-img" />
-        </div>
-        <div class="col s12 m8 flow-text">
-          <h2>Aptituddagen</h2>
+        <div class="col s12 flow-text">
+          <h2>Aptituddagen - för att utveckla och utvecklas</h2>
+          <img src="images/aptituddagen.png" class="responsive-img section-img" />
           <p>
             Vi träffas en arbetsdag i månaden för att utveckla och utvecklas tillsammans. Bara för att det är kul och för att bli inspirerade. Och för att umgås. Vi gillar nämligen människor. Därför är dörren öppen och alla är välkomna. Vi börjar dagen med att sätta
             agendan och kolla av vilka projekt som är igång och vad det finns för roliga ideer som behöver realiseras. Anything goes!
@@ -55,7 +53,7 @@
           <p>
             Ibland blir det vi bygger användbart och bevarat:
           </p>
-          <div class="card-panel light-green darken-3">
+          <div class="card-panel z-depth-3">
             <ul>
               <li><a href="#tweetMap" onclick="routeTo('tweetMap')">Tweet kartan</a>, <a href="https://github.com/aptitud/SimpleTweetMap">koden här</a></li>
               <li><a href="http://sjovaderprognos.herokuapp.com">Weather forecast</a> tweetar sjövädersprognoser för <a href="https://twitter.com/NorraOstersjon">Norra Östersjön</a>, <a href="https://github.com/aptitud/WeatherForecast">koden här</a></li>
@@ -72,12 +70,181 @@
         </div>
       </div>
       <div class="expand">
-        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        <i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i>
+      </div>
+    </section>
+    <section class="fellows">
+      <script id="fellow-template" type="text/x-handlebars-template">
+        <div class="fellow col s12 l4">
+          <div class="card-panel z-depth-2 flow-text">
+            <div class="row info">
+              <div class="col s3">
+                <img src="images/medarbetare/{{img}}" alt="" class="circle responsive-img">
+              </div>
+              <div class="col s8 s-offset-1">
+                <div class="desc">
+                  <h4>{{name}}</h4>
+                  <div>{{desc}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="row contact">
+              <div class="col s-12">
+                <ul>
+                  <li>
+                    <a rel='email' href="[email]{{name}}" target="_blank">
+                      <span>
+                        <i class="fa fa-envelope fa-fw"></i>
+                      </span>
+                    </a>
+                  </li>
+                  {{#if phone}}
+                  <li>
+                    <a href="tel:{{phone}}">
+                      <span>
+                        <i class="fa fa-phone fa-fw"></i>
+                      </span>
+                    </a>
+                  </li>
+                  {{/if}}{{#if blog}}
+                  <li>
+                    <a href="{{blog}}" target="_blank">
+                      <span>
+                        <i class="fa fa-globe fa-fw"></i>
+                      </span>
+                    </a>
+                  </li>
+                  {{/if}} {{#if services}} {{#each services}}
+                  <li>
+                    <a href="{{this.url}}" target="_blank">
+                      <span>
+                    <i class="fa fa-{{this.name}} fa-fw"></i>
+                  </span>
+                    </a>
+                  </li>
+                  {{/each}} {{/if}}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </script>
+
+      <article class="orange-text text-lighten-5">
+        <section>
+          <div id="fellowPage" class="row">
+            <div class="col s12 m10 offset-m1">
+              <div id="fellow-list" class="row" />
+            </div>
+          </div>
+        </section>
+      </article>
+      <script>
+        function shuffle(o) {
+          for (var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+          return o;
+        }
+
+        function addClearFix(layoutDiv, index) {
+          if (index !== 0 && index % 3 === 0) {
+            layoutDiv.append("<div class='clearfix visible-lg-block'></div>");
+          }
+          if (index !== 0 && index % 2 === 0) {
+            layoutDiv.append("<div class='clearfix visible-sm-block'></div>");
+          }
+        }
+
+        function layoutFellows(fellows) {
+          var fellowTemplate = Handlebars.compile($("#fellow-template").html());
+          var layoutDiv = $("#fellow-list");
+
+          shuffle(fellows);
+          fellows.forEach(function(fellow, index) {
+            //addClearFix(layoutDiv, index);
+            layoutDiv.append(fellowTemplate(fellow));
+          });
+        }
+
+        function safeUpEmailAddresses() {
+          $("a[rel='email']").each(function() {
+            // Modify the mailto: value
+            var mailtoVal = $(this).attr('href');
+            mailtoVal = mailtoVal.replace(" ", ".");
+            mailtoVal = mailtoVal.toLowerCase();
+            mailtoVal = mailtoVal.replace("[email]", "mailto:");
+            mailtoVal = mailtoVal.replace("å", "a");
+            mailtoVal = mailtoVal.replace("ä", "a");
+            mailtoVal = mailtoVal.replace("ö", "o");
+            mailtoVal = mailtoVal.replace("ü", "u");
+
+            mailtoVal = mailtoVal + "@" + "aptitud" + ".se";
+
+            //console.log(mailtoVal);
+
+            // Auto-generate title tags for users
+            var mailtoTitle = mailtoVal.replace("mailto:", "Maila till ");
+            $(this).attr('title', mailtoTitle);
+
+            // onClick Event
+            $(this).click(function() {
+              window.open(mailtoVal, "_blank");
+              return false;
+            });
+          });
+        }
+
+        $.getJSON("fellows.json").done(function(fellows) {
+          layoutFellows(fellows);
+          safeUpEmailAddresses();
+          addDnDSupport();
+        });
+
+        var dragSrc = null;
+        var addDnDSupport = function() {
+          $(".fellow").each(function(index) {
+            $(this).attr('draggable', 'true');
+            $(this).bind('dragstart', function(e) {
+              $(this).fadeTo("slow", 0.4);
+              dragSrc = this;
+              e.originalEvent.dataTransfer.effectAllowed = 'move';
+              e.originalEvent.dataTransfer.setData('text/html', $(this).html());
+            });
+            $(this).bind('dragover', function(e) {
+              if (e.preventDefault) {
+                e.preventDefault();
+              }
+              return false;
+            });
+            $(this).bind('dragenter', function(e) {
+
+            });
+            $(this).bind('dragleave', function(e) {
+
+            });
+            $(this).bind('drop', function(e) {
+              if (e.stopPropagation) {
+                e.stopPropagation();
+              }
+              if (dragSrc != this) {
+                dragSrc.innerHTML = this.innerHTML;
+                this.innerHTML = e.originalEvent.dataTransfer.getData('text/html');
+                $(dragSrc).fadeTo("slow", 1.0);
+                $(this).fadeTo("slow", 1.0);
+              }
+              return false;
+            });
+            $(this).bind('dragend', function(e) {
+
+            });
+          })
+        };
+      </script>
+      <div class="expand">
+        <i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i>
       </div>
     </section>
   </main>
 
-  <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
   <script src="src/js/script.js"></script>
 </body>
