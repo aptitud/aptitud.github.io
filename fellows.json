@@ -186,4 +186,12 @@
         { "name" : "linkedin",  "url" : "https://se.linkedin.com/pub/emma-ullberg/3/37b/a80" },
         { "name" : "twitter",   "url" : "https://twitter.com/emmaullberg" }
     ]
+}, {
+    "img": "emiling.jpg",
+    "name": "Emil Ingridsson",
+    "desc": "Ödmjuk och engagerad utvecklare som drivs av tekniska utmaningar. Norrlänning som via söder har hamnat söder om söder.",
+    "services" : [
+        { "name" : "linkedin", "url" : "https://se.linkedin.com/in/emil-ingridsson-24113026" },
+        { "name" : "twitter", "url" : "https://twitter.com/emilingridsson" }
+     ]
 }]
