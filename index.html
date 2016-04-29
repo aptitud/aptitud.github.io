@@ -74,6 +74,11 @@
       </div>
     </section>
     <section class="fellows">
+      <div class="container row">
+        <div class="col s12">
+          <h2>Det är vi som är Aptitud - hittar du någon du känner?</h2>
+        </div>
+      </div>
       <script id="fellow-template" type="text/x-handlebars-template">
         <div class="fellow col s12 l4">
           <div class="card-panel z-depth-2 flow-text">
@@ -130,15 +135,11 @@
         </div>
       </script>
 
-      <article class="orange-text text-lighten-5">
-        <section>
-          <div id="fellowPage" class="row">
-            <div class="col s12 m10 offset-m1">
-              <div id="fellow-list" class="row" />
-            </div>
-          </div>
-        </section>
-      </article>
+      <div id="fellowPage" class="row">
+        <div class="col s12 m10 offset-m1">
+          <div id="fellow-list" class="row" />
+        </div>
+      </div>
       <script>
         function shuffle(o) {
           for (var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
@@ -239,6 +240,44 @@
           })
         };
       </script>
+      <div class="expand">
+        <i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container row">
+        <div class="col s12">
+          <h2>Så här hittar du till oss i Gamla Stan</h2>
+          <img class="responsive-img section-img" src="images/karta.png">
+          <div class="row">
+            <div class="col s12 m5 offset-m1">
+              <div class="card">
+                <div class="card-content">
+                  <h3 class="card-title">Besöksadress</h3>
+                  <p>
+                    Aptitud<br/>
+                    Stora Nygatan 7<br/>
+                    111 27 Stockholm
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a href="https://www.google.se/maps/place/Stora+Nygatan+7,+111+27+Stockholm/@59.3271399,18.0506839,13.81z/data=!4m2!3m1!1s0x465f77e21038bb13:0x7addcf9e0003c278" target="_blank">Visa karta</a>
+                </div>
+              </div>
+                <div class="card">
+                  <div class="card-content">
+                    <h3 class="card-title">Postadress</h3>
+                    <p>
+                      Aptitud<br/>
+                      Box 2057<br/>
+                      103 12 Stockholm
+                    </p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="expand">
         <i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i>
       </div>
