@@ -162,4 +162,12 @@
         { "name" : "linkedin",  "url" : " https://se.linkedin.com/pub/olof-sandström/1/21a/a0b" },
         { "name" : "instagram", "url" : " https://instagram.com/olof.sa" }
      ]
+}, {
+    "img": "emiing.jpg",
+    "name": "Emil Ingridsson",
+    "desc": "Ödmjuk och engagerad utvecklare som drivs av tekniska utmaningar. Norrlänning som via söder har hamnat söder om söder.",
+    "services" : [
+        { "name" : "linkedin", "url" : "https://se.linkedin.com/in/emil-ingridsson-24113026" },
+        { "name" : "twitter", "url" : "https://twitter.com/emilingridsson" }
+     ]
 }]
