@@ -56,9 +56,10 @@ main > section {
 }
 section.logo {
   background-color: rgb(238, 85, 85);
+  min-height: 0;
   img {
     max-height: 35vh;
-    min-height: 380px;
+    height: 380px;
     margin: 0 auto;
     display: block;
   }
@@ -94,6 +95,89 @@ section.contact {
       font-size: 20px;
     }
   }
+}
+section.aptigram {
+  background-color: #784e90;
+
+  ul.polaroids {
+    padding-left: 0;
+    padding-right: 0;
+    a {
+      -webkit-transition: -webkit-transform .15s linear;
+      -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+      -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+      background-color: #fff !important;
+      display: inline;
+      float: left;
+      margin: 0 15px 27px 15px;
+      width: auto;
+      padding: 10px 10px 15px;
+      font-family: 'Gloria Hallelujah', cursive;
+      text-decoration: none;
+      text-align: left;
+      color: #333;
+      font-size: 14px;
+      -webkit-transform: rotate(-2deg);
+      -moz-transform: rotate(-2deg);
+      &:hover {
+        -webkit-transform: scale(1.25) !important;
+        -moz-transform: scale(1.25) !important;
+        position: relative;
+        z-index: 5;
+      }
+      &:after {
+        content: attr(title);
+        display: block;
+        max-width: 200px;
+        padding-left: 5px;
+        text-align: left;
+      }
+    }
+    li {
+      display: inline-block;
+      list-style-type: none;
+      &:nth-child(even) {
+        a {
+          -webkit-transform: rotate(2deg);
+          -moz-transform: rotate(2deg);
+        }
+      }
+      &:nth-child(3n) a {
+        -webkit-transform: none;
+        -moz-transform: none;
+        position: relative;
+        top: -5px;
+      }
+      &:nth-child(5n) a {
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        position: relative;
+        right: 5px;
+      }
+      &:nth-child(8n) a {
+        position: relative;
+        top: 8px;
+        right: 5px;
+      }
+      &:nth-child(11n) a {
+        position: relative;
+        top: 3px;
+        left: -5px;
+      }
+    }
+    img {
+      max-width: 200px;
+      margin-bottom: 5px;
+    }
+    .location {
+      display: block;
+      font-size: 10px;
+      text-align: left;
+      padding: 0 0 0 5px;
+      margin-bottom: 5px;
+    }
+  }
+
 }
 section.fellows {
   background-color: #FF6633;

@@ -269,6 +269,25 @@
         <i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i>
       </div>
     </section>
+    <section class="aptigram">
+      <div class="container row">
+        <div class="col s12">
+          <h2>Aptigram - Aptitud i bilder</h2>
+          <ul class="polaroids" id="instacontainer"></ul>
+          <script type="text/javascript">
+            $.getJSON("instagram.json", function(json) {
+              console.log('json', json);
+              $(json).each(function(index, image) {
+                $('#instacontainer').append("<li><a href='http://www.instagram.com/aptitud_sthlm/' title='" + image.Caption + "'><img src='" + image.Url + "'/><span class='location'>" + image.Location + "</span></a></li>");
+              });
+            });
+          </script>
+        </div>
+      </div>
+      <div class="expand">
+        <i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i>
+      </div>
+    </section>
     <section class="contact">
       <div class="container row">
         <div class="col s12">
