@@ -1,4 +1,5 @@
 html {
+  font-size: 70%;
   box-sizing: border-box; }
 
 *,
@@ -82,13 +83,15 @@ section.contact {
         color: #039be5 !important; }
     section.contact .card p {
       font-size: 20px; }
+  section.contact .links img {
+    height: 60px; }
 
 section.aptigram {
   background-color: #784e90; }
-  section.aptigram ul.polaroids {
+  section.aptigram .polaroids {
     padding-left: 0;
     padding-right: 0; }
-    section.aptigram ul.polaroids a {
+    section.aptigram .polaroids a {
       -webkit-transition: -webkit-transform .15s linear;
       -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
       -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
@@ -105,45 +108,45 @@ section.aptigram {
       font-size: 14px;
       -webkit-transform: rotate(-2deg);
       -moz-transform: rotate(-2deg); }
-      section.aptigram ul.polaroids a:hover {
+      section.aptigram .polaroids a:hover {
         -webkit-transform: scale(1.25) !important;
         -moz-transform: scale(1.25) !important;
         position: relative;
         z-index: 5; }
-      section.aptigram ul.polaroids a:after {
+      section.aptigram .polaroids a:after {
         content: attr(title);
         display: block;
         max-width: 200px;
         padding-left: 5px;
         text-align: left; }
-    section.aptigram ul.polaroids li {
+    section.aptigram .polaroids .polariod {
       display: inline-block;
-      list-style-type: none; }
-      section.aptigram ul.polaroids li:nth-child(even) a {
+      min-height: 400px; }
+      section.aptigram .polaroids .polariod:nth-child(even) a {
         -webkit-transform: rotate(2deg);
         -moz-transform: rotate(2deg); }
-      section.aptigram ul.polaroids li:nth-child(3n) a {
+      section.aptigram .polaroids .polariod:nth-child(3n) a {
         -webkit-transform: none;
         -moz-transform: none;
         position: relative;
         top: -5px; }
-      section.aptigram ul.polaroids li:nth-child(5n) a {
+      section.aptigram .polaroids .polariod:nth-child(5n) a {
         -webkit-transform: rotate(5deg);
         -moz-transform: rotate(5deg);
         position: relative;
         right: 5px; }
-      section.aptigram ul.polaroids li:nth-child(8n) a {
+      section.aptigram .polaroids .polariod:nth-child(8n) a {
         position: relative;
         top: 8px;
         right: 5px; }
-      section.aptigram ul.polaroids li:nth-child(11n) a {
+      section.aptigram .polaroids .polariod:nth-child(11n) a {
         position: relative;
         top: 3px;
         left: -5px; }
-    section.aptigram ul.polaroids img {
+    section.aptigram .polaroids img {
       max-width: 200px;
       margin-bottom: 5px; }
-    section.aptigram ul.polaroids .location {
+    section.aptigram .polaroids .location {
       display: block;
       font-size: 10px;
       text-align: left;
@@ -173,11 +176,11 @@ section.fellows {
           right: 0;
           height: 60px;
           /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e859a+100&0+0,1+100 */
-          background: -moz-linear-gradient(top, rgba(238, 238, 238, 0) 0, #eeeeee 30px);
+          background: -moz-linear-gradient(top, rgba(238, 238, 238, 0.5) 0, #eeeeee 30px);
           /* FF3.6-15 */
-          background: -webkit-linear-gradient(top, rgba(238, 238, 238, 0) 0, #eeeeee 30px);
+          background: -webkit-linear-gradient(top, rgba(238, 238, 238, 0.5) 0, #eeeeee 30px);
           /* Chrome10-25,Safari5.1-6 */
-          background: linear-gradient(to bottom, rgba(238, 238, 238, 0) 0, #eeeeee 30px);
+          background: linear-gradient(to bottom, rgba(238, 238, 238, 0.5) 0, #eeeeee 30px);
           /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
           /* IE6-9 */ }
@@ -194,7 +197,7 @@ section.fellows {
       section.fellows .fellow .card-panel ul > li {
         display: inline; }
         section.fellows .fellow .card-panel ul > li .fa {
-          font-size: 30px; }
+          font-size: 20px; }
 
 .section-img {
   float: left;
