@@ -1,0 +1,133 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  color: #fff;
+  -webkit-font-smoothing: antialiased; }
+
+main > section {
+  max-height: 40vh;
+  min-height: 400px;
+  overflow-y: hidden;
+  padding: 3vh 0;
+  position: relative;
+  transition: max-height 2s ease; }
+  main > section .expand {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e859a+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.3) 90%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.3) 90%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 90%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
+    /* IE6-9 */ }
+    main > section .expand .fa {
+      display: block;
+      font-size: 150px;
+      text-align: center;
+      text-shadow: 0 10px 0 rgba(0, 0, 0, 0.15);
+      opacity: 0.3;
+      transition: opacity 0.5s ease; }
+      main > section .expand .fa:before {
+        margin: 0 auto; }
+      main > section .expand .fa:hover {
+        opacity: 0.7;
+        cursor: pointer; }
+  main > section.expanded {
+    max-height: 10000px; }
+    main > section.expanded .expand {
+      display: none; }
+
+section.logo {
+  background-color: #ee5555; }
+  section.logo img {
+    max-height: 35vh;
+    min-height: 380px;
+    margin: 0 auto;
+    display: block; }
+
+section.about {
+  background-color: #1e859a; }
+
+section.aptitud-day {
+  background-color: #7a9752; }
+  section.aptitud-day .card-panel {
+    background-color: #eee;
+    color: #000; }
+
+section.contact {
+  background-color: #FEBE10; }
+  section.contact .card {
+    background-color: #eee;
+    color: #000; }
+    section.contact .card .card-title {
+      font-weight: 200;
+      text-transform: uppercase;
+      margin-top: 0; }
+    section.contact .card .card-action {
+      background-color: rgba(0, 0, 0, 0.05);
+      z-index: 0; }
+      section.contact .card .card-action a {
+        color: #039be5 !important; }
+    section.contact .card p {
+      font-size: 20px; }
+
+section.fellows {
+  background-color: #FF6633; }
+  section.fellows .fellow {
+    padding: 30px; }
+    section.fellows .fellow .card-panel {
+      overflow: hidden;
+      padding: 0;
+      background-color: #eee;
+      color: #000; }
+      section.fellows .fellow .card-panel .row {
+        padding: 20px; }
+      section.fellows .fellow .card-panel .info {
+        position: relative;
+        margin-bottom: 0; }
+        section.fellows .fellow .card-panel .info:before {
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 60px;
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e859a+100&0+0,1+100 */
+          background: -moz-linear-gradient(top, rgba(238, 238, 238, 0) 0, #eeeeee 30px);
+          /* FF3.6-15 */
+          background: -webkit-linear-gradient(top, rgba(238, 238, 238, 0) 0, #eeeeee 30px);
+          /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom, rgba(238, 238, 238, 0) 0, #eeeeee 30px);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
+          /* IE6-9 */ }
+        section.fellows .fellow .card-panel .info .desc {
+          height: 370px;
+          overflow-y: scroll; }
+      section.fellows .fellow .card-panel .contact {
+        padding: 0 30px;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.05);
+        clear: both; }
+        section.fellows .fellow .card-panel .contact .col {
+          padding: 0; }
+      section.fellows .fellow .card-panel ul > li {
+        display: inline; }
+        section.fellows .fellow .card-panel ul > li .fa {
+          font-size: 30px; }
+
+.section-img {
+  float: left;
+  margin: 20px 50px 20px 0; }

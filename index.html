@@ -6,99 +6,311 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" type="text/css" href="bower_components/Materialize/dist/css/materialize.min.css" media="screen,projection">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+  <link rel="stylesheet" href="src/css/style.css">
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="images/favicon/favicon.ico">
-  <link rel="icon" sizes="16x16 32x32 64x64" href="images/favicon//favicon.ico">
-  <link rel="icon" type="image/png" sizes="196x196" href="images/favicon/favicon-192.png">
-  <link rel="icon" type="image/png" sizes="160x160" href="images/favicon/favicon-160.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96.png">
-  <link rel="icon" type="image/png" sizes="64x64" href="images/favicon/favicon-64.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16.png">
-  <link rel="apple-touch-icon" href="images/favicon/favicon-57.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/favicon-114.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/favicon-72.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/favicon-144.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/favicon-60.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/favicon-120.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/favicon-76.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/favicon-152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon-180.png">
-  <meta name="msapplication-TileColor" content="#FFFFFF">
-  <meta name="msapplication-TileImage" content="images/favicon/favicon-144.png">
-  <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
-  <!-- Favicon end -->
-
+  <script src="bower_components/handlebars/handlebars.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo"><img alt="Brand" src="images/favicon/favicon-60.png"></a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#start">Aptitud</a></li>
-          <li><a href="#philosophy">Filosofi</a></li>
-          <li><a href="#aptigram">Instagram</a></li>
-          <li><a href="#aptitudDay">Aptituddag</a></li>
-          <li><a href="#fellow">Medarbetare</a></li>
-          <li><a href="#map">Hitta hit</a></li>
-          <li><a href="#blog">Blogg</a></li>
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-          <li><a href="#start">Aptitud</a></li>
-          <li><a href="#philosophy">Filosofi</a></li>
-          <li><a href="#aptigram">Instagram</a></li>
-          <li><a href="#aptitudDay">Aptituddag</a></li>
-          <li><a href="#fellow">Medarbetare</a></li>
-          <li><a href="#map">Hitta hit</a></li>
-          <li><a href="#blog">Blogg</a></li>
-        </ul>
+  <main>
+    <section class="logo expanded">
+      <div class="container row">
+        <div class="col s12"><img class="responsive-img" src="images/aptitudlogo.png"></div>
       </div>
-    </nav>
-  </div>
+    </section>
+    <section class="about">
+      <div class="container row">
+        <div class="col s12 flow-text">
+          <h2>Vi bygger Sveriges bästa arbetsplats för IT-konsulter</h2>
+          <img class="responsive-img section-img" src="images/klotter.png">
+          <p> Vi bygger Sveriges bästa arbetsplats för IT-konsulter där fokus är att ha roligt i sitt arbete. En plats dit människor söker sig naturligt. En plats dit alla är välkomna. Välkomna att utbyta ideer, att inspireras och att inspirera. </p>
 
-  <main class="container" id="main-container">
-    <div class="row">
-      <div class="col s12 m10 offset-m1">
-        <div id="includedContent" class="flow-text"></div>
+          <p> En plats för oss som är seriösa utan att ta oss själva på för stort allvar. Vi vill ha roliga kollegor och ha tid att umgås med dem - på arbetstid. Bl a genom Aptituddagar, Blixttalsluncher, bolagsmöten och konferenser. </p>
+
+          <p> Vi tror på transparens. All information är synlig och vi tycker att om man törs fatta ett beslut och stå för det, så gör det! Vi litar på varandras sunda förnuft och omdöme. Blir det fel rättar vi till det och blir lite klokare. </p>
+
+          <p> Hittills har vi lyckats. Vi har inga hemligheter. Det är oerhört skönt! Men mest handlar det om att ha roligt!
+          </p>
+          <h3>Att bli den bästa arbetsgivaren</h3>
+          <p>Sedan första dagen så har vi varit tydliga med att det absolut viktigaste med Aptitud är att ständigt försöka vara den bästa arbetsgivaren för IT-konsulter.</p>
+          <p>Lite hastigt så skiljer vi oss nog inte så mycket från andra: &nbsp;</p>
+          <p>-Vi vill ha roliga kollegor och ges tid att umgås med dem.
+            <br>-Vi vill bestämma över oss själva
+            <br>-Vi vill ha roliga uppdrag
+            <br>-Vi vill ha bra betalt</p>
+          <p>Det är vad man gör för att realisera de här punkterna som gör skillnaden. Att bygga en plattform som främjar dem.</p>
+          <p>Vi är nyfikna, glada och ödmjuka. Vi vill bli inspirerade och vi delar gärna med oss och blir glada om vi inspirerar andra. Vi satsar därför mycket tid på att ses och det får kosta pengar. När vi ses är det dessutom nästan alltid öppet för andra
+            att delta. Vi försöker ses minst en gång i veckan; lunch, bolagsmöten, blixtalsluncher, afterwork, Aptituddagen och konferenser.&nbsp;</p>
+          <p>Aptituddagen är en dag att ägna sig åt det man vill med möjlighet att få hjälp och inspiration från kollegor och vänner i branschen. Dagen har ett Open Space liknande&nbsp;koncept. De som har något de vill ta upp eller göra berättar om det och
+            lämnar utrymme för nyfikna att delta.&nbsp;</p>
+          <p>Vi vill åka på konferenser. Men vi vill inte sitta och lyssna på långdragna föreläsningar med powerpoints med nyckeltal. Vi vill åka iväg för att lära känna varandra bättre, utvecklas och ha roligt. Hittills har det blivit Öredev, Jfokus, GOTO
+            Århus, Riksgränsen, Alagna i italien, Fagerudd och snart Engelberg. Så tre konferenser om året blir det - minst. Vill man åka på fler&nbsp;så är det fritt fram.&nbsp;</p>
+          <p>Det numera vedertagna; “tweets are my own/opinions are my own” är långt ifrån oss. Vi är de som vi jobbar med och vi står bakom varandra och är trygga i att människor har&nbsp;olika uppfattningar om saker och ting.&nbsp;</p>
+          <p>Det mesta som gäller att bygga en bra företagsgrund tycker vi handlar om beslutprocesser och vi tycker det är enkelt - om man törs fatta ett beslut och stå för det, så&nbsp;gör det! Oavsett om man tycker kontoret behöver en ny Jukebox, om man
+            vill ta semester, om man vill åka på konferens, anställa någon eller köpa en telefon. Om man inte&nbsp;vill fatta beslutet själv så pratar man med några kollegor. Vi litar på varandras sunda förnuft och omdöme. Blir det fel rättar vi till
+            och så vi har blivit lite klokare angående vad&nbsp;vi tycker är ok. För att det här ska fungera krävs en hel del transparens. Alla måste få ta del av alla beslut som&nbsp;fattas så att vi har en chans att skapa ett kollektivt rättesnöre.
+            Hittills har vi lyckats. Vi har idagsläget inga hemligheter och det är det som definierar vår transparens. Ställer man en fråga får man ett riktigt svar. Det är oerhört skönt.&nbsp;</p>
+          <p>Vi sa rätt tidigt att de som söker sig till Aptitud är inte de som fortfarande jobbhoppar för att trissa upp lönen eller klättrar i den traditionella karriärstegen. De som kommer hit vet att det är konsult de vill vara, att karriärsutveckling
+            egentligen handlar om personlig utveckling och att har man en skälig lön så finns det viktigare faktorer som styr valet av arbetsgivare.</p>
+          <p>Så vi har en rörlig lön som utgår från 53000kr/mån och baseras på att man jobbar med ett timpris på 800:-. Jobbar man mer eller har ett högre timpris går den&nbsp;upp lite. Jobbar man mindre går den ned - lite. Genomsnittet ligger på ungefär
+            på 59000:- med en spridning mellan 50000:- och 71000:-.&nbsp;</p>
+          <p>Men mest kokar det ihop till att ha roligt. Då gör man allting lite bättre.&nbsp;</p>
+          <p><em>Kärlek, transparens och Jävlar anamma!</em>&nbsp;</p>
+        </div>
       </div>
-    </div>
+      <div class="expand">
+        <i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i>
+      </div>
+    </section>
+    <section class="aptitud-day">
+      <div class="container row">
+        <div class="col s12 flow-text">
+          <h2>Aptituddagen - för att utveckla och utvecklas</h2>
+          <img src="images/aptituddagen.png" class="responsive-img section-img" />
+          <p>
+            Vi träffas en arbetsdag i månaden för att utveckla och utvecklas tillsammans. Bara för att det är kul och för att bli inspirerade. Och för att umgås. Vi gillar nämligen människor. Därför är dörren öppen och alla är välkomna. Vi börjar dagen med att sätta
+            agendan och kolla av vilka projekt som är igång och vad det finns för roliga ideer som behöver realiseras. Anything goes!
+          </p>
+          <p>
+            Ibland blir det vi bygger användbart och bevarat:
+          </p>
+          <div class="card-panel z-depth-3">
+            <ul>
+              <li><a href="#tweetMap" onclick="routeTo('tweetMap')">Tweet kartan</a>, <a href="https://github.com/aptitud/SimpleTweetMap">koden här</a></li>
+              <li><a href="http://sjovaderprognos.herokuapp.com">Weather forecast</a> tweetar sjövädersprognoser för <a href="https://twitter.com/NorraOstersjon">Norra Östersjön</a>, <a href="https://github.com/aptitud/WeatherForecast">koden här</a></li>
+              <li><a href="http://simpleradar.herokuapp.com/">Simple radar</a> bygg din egen trend-radar, <a href="https://github.com/aptitud/SimpleRadar">koden här</a></li>
+              <li><a href="https://github.com/aptitud/Aptitud.webcv">Aptitud CV</a> där vi kan hålla koll på våra CV's, <a href="https://github.com/aptitud/Aptitud.webcv">koden här</a></li>
+              <li><a href="https://github.com/aptitud/AptiTalk">AptiTalk</a> en chat app - med trådar, <a href="https://github.com/aptitud/AptiTalk">koden här</a></li>
+              <li><a href="https://simplewebsummitschedule.herokuapp.com/index.html">Simple Web Summit Schdule</a> enkel överblick för alla session under WebSummit 2015, höstens konferens. <a href="https://github.com/hugohaggmark/SimpleWebSummitSchedule">koden här</a></li>
+              <li><a href="http://aptitud.se/#aptigram">Bilder från Instagram</a> visar de senaste bilderna från Aptitud_sthml <a href="https://github.com/aptitud/aptigram">koden här</a> och<a href="https://github.com/aptitud/aptitud.github.io/blob/master/aptigram.html"> här</a></li>
+            </ul>
+          </div>
+          <p>
+            Dagen avslutas med lite mat och en öppen afterwork för vänner i och utanför branschen.
+          </p>
+        </div>
+      </div>
+      <div class="expand">
+        <i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i>
+      </div>
+    </section>
+    <section class="fellows">
+      <div class="container row">
+        <div class="col s12">
+          <h2>Det är vi som är Aptitud - hittar du någon du känner?</h2>
+        </div>
+      </div>
+      <script id="fellow-template" type="text/x-handlebars-template">
+        <div class="fellow col s12 l4">
+          <div class="card-panel z-depth-2 flow-text">
+            <div class="row info">
+              <div class="col s3">
+                <img src="images/medarbetare/{{img}}" alt="" class="circle responsive-img">
+              </div>
+              <div class="col s8 s-offset-1">
+                <div class="desc">
+                  <h4>{{name}}</h4>
+                  <div>{{desc}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="row contact">
+              <div class="col s-12">
+                <ul>
+                  <li>
+                    <a rel='email' href="[email]{{name}}" target="_blank">
+                      <span>
+                        <i class="fa fa-envelope fa-fw"></i>
+                      </span>
+                    </a>
+                  </li>
+                  {{#if phone}}
+                  <li>
+                    <a href="tel:{{phone}}">
+                      <span>
+                        <i class="fa fa-phone fa-fw"></i>
+                      </span>
+                    </a>
+                  </li>
+                  {{/if}}{{#if blog}}
+                  <li>
+                    <a href="{{blog}}" target="_blank">
+                      <span>
+                        <i class="fa fa-globe fa-fw"></i>
+                      </span>
+                    </a>
+                  </li>
+                  {{/if}} {{#if services}} {{#each services}}
+                  <li>
+                    <a href="{{this.url}}" target="_blank">
+                      <span>
+                    <i class="fa fa-{{this.name}} fa-fw"></i>
+                  </span>
+                    </a>
+                  </li>
+                  {{/each}} {{/if}}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </script>
+
+      <div id="fellowPage" class="row">
+        <div class="col s12 m10 offset-m1">
+          <div id="fellow-list" class="row" />
+        </div>
+      </div>
+      <script>
+        function shuffle(o) {
+          for (var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+          return o;
+        }
+
+        function addClearFix(layoutDiv, index) {
+          if (index !== 0 && index % 3 === 0) {
+            layoutDiv.append("<div class='clearfix visible-lg-block'></div>");
+          }
+          if (index !== 0 && index % 2 === 0) {
+            layoutDiv.append("<div class='clearfix visible-sm-block'></div>");
+          }
+        }
+
+        function layoutFellows(fellows) {
+          var fellowTemplate = Handlebars.compile($("#fellow-template").html());
+          var layoutDiv = $("#fellow-list");
+
+          shuffle(fellows);
+          fellows.forEach(function(fellow, index) {
+            //addClearFix(layoutDiv, index);
+            layoutDiv.append(fellowTemplate(fellow));
+          });
+        }
+
+        function safeUpEmailAddresses() {
+          $("a[rel='email']").each(function() {
+            // Modify the mailto: value
+            var mailtoVal = $(this).attr('href');
+            mailtoVal = mailtoVal.replace(" ", ".");
+            mailtoVal = mailtoVal.toLowerCase();
+            mailtoVal = mailtoVal.replace("[email]", "mailto:");
+            mailtoVal = mailtoVal.replace("å", "a");
+            mailtoVal = mailtoVal.replace("ä", "a");
+            mailtoVal = mailtoVal.replace("ö", "o");
+            mailtoVal = mailtoVal.replace("ü", "u");
+
+            mailtoVal = mailtoVal + "@" + "aptitud" + ".se";
+
+            //console.log(mailtoVal);
+
+            // Auto-generate title tags for users
+            var mailtoTitle = mailtoVal.replace("mailto:", "Maila till ");
+            $(this).attr('title', mailtoTitle);
+
+            // onClick Event
+            $(this).click(function() {
+              window.open(mailtoVal, "_blank");
+              return false;
+            });
+          });
+        }
+
+        $.getJSON("fellows.json").done(function(fellows) {
+          layoutFellows(fellows);
+          safeUpEmailAddresses();
+          addDnDSupport();
+        });
+
+        var dragSrc = null;
+        var addDnDSupport = function() {
+          $(".fellow").each(function(index) {
+            $(this).attr('draggable', 'true');
+            $(this).bind('dragstart', function(e) {
+              $(this).fadeTo("slow", 0.4);
+              dragSrc = this;
+              e.originalEvent.dataTransfer.effectAllowed = 'move';
+              e.originalEvent.dataTransfer.setData('text/html', $(this).html());
+            });
+            $(this).bind('dragover', function(e) {
+              if (e.preventDefault) {
+                e.preventDefault();
+              }
+              return false;
+            });
+            $(this).bind('dragenter', function(e) {
+
+            });
+            $(this).bind('dragleave', function(e) {
+
+            });
+            $(this).bind('drop', function(e) {
+              if (e.stopPropagation) {
+                e.stopPropagation();
+              }
+              if (dragSrc != this) {
+                dragSrc.innerHTML = this.innerHTML;
+                this.innerHTML = e.originalEvent.dataTransfer.getData('text/html');
+                $(dragSrc).fadeTo("slow", 1.0);
+                $(this).fadeTo("slow", 1.0);
+              }
+              return false;
+            });
+            $(this).bind('dragend', function(e) {
+
+            });
+          })
+        };
+      </script>
+      <div class="expand">
+        <i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container row">
+        <div class="col s12">
+          <h2>Så här hittar du till oss i Gamla Stan</h2>
+          <img class="responsive-img section-img" src="images/karta.png">
+          <div class="row">
+            <div class="col s12 m5 offset-m1">
+              <div class="card">
+                <div class="card-content">
+                  <h3 class="card-title">Besöksadress</h3>
+                  <p>
+                    Aptitud
+                    <br/> Stora Nygatan 7
+                    <br/> 111 27 Stockholm
+                  </p>
+                </div>
+                <div class="card-action">
+                  <a href="https://www.google.se/maps/place/Stora+Nygatan+7,+111+27+Stockholm/@59.3271399,18.0506839,13.81z/data=!4m2!3m1!1s0x465f77e21038bb13:0x7addcf9e0003c278" target="_blank">Visa karta</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-content">
+                  <h3 class="card-title">Postadress</h3>
+                  <p>
+                    Aptitud
+                    <br/> Box 2057
+                    <br/> 103 12 Stockholm
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="expand">
+        <i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i>
+      </div>
+    </section>
   </main>
 
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="bower_components/handlebars/handlebars.js"></script>
-
-  <!-- Materialize -->
-  <script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
-
-  <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry"></script>
-
-  <!-- Google Analytics -->
-  <script>
-    (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-59199549-1', 'auto');
-  </script>
-  <!-- End Google Analytics -->
-
-  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <script src="src/js/script.js"></script>
 </body>
 
 </html>
