@@ -1,5 +1,5 @@
 html {
-  font-size: 70%;
+  font-size: 60%;
   box-sizing: border-box; }
 
 *,
@@ -13,7 +13,7 @@ body {
 
 main > section {
   max-height: 40vh;
-  min-height: 400px;
+  min-height: 200px;
   overflow-y: hidden;
   padding: 3vh 0;
   position: relative;
@@ -22,7 +22,7 @@ main > section {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 40%;
+    height: 45%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e859a+100&0+0,1+100 */
     background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.3) 90%);
     /* FF3.6-15 */
@@ -187,7 +187,7 @@ section.fellows {
           /* IE6-9 */ }
         section.fellows .fellow .card-panel .info .desc {
           height: 370px;
-          overflow-y: scroll; }
+          overflow-y: auto; }
       section.fellows .fellow .card-panel .contact {
         padding: 0 30px;
         margin: 0;
