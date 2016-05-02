@@ -33,6 +33,7 @@ main > section {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
     /* IE6-9 */ }
     main > section .expand .fa {
+      width: 95%;
       display: block;
       font-size: 150px;
       text-align: center;
