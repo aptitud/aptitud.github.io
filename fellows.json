@@ -1,7 +1,7 @@
 [{
     "img": "perj.jpg",
     "name": "Per Jansson",
-    "desc": "Nyfiken och otålig utvecklare (java, web, mobil) som älskar att bygga grymma, användbara system och hjälpa andra göra detsamma. Gift, trebarnsfarsa och sportfantast på hemmaplan.",
+    "desc": "Nyfiken och otålig utvecklare (web, java, mobil) som älskar att bygga grymma, användbara system och hjälpa andra göra detsamma. Gift, fyrbarnsfarsa och sportfantast på hemmaplan.",
     "phone": "0702-662106",
     "blog": "http://thecuriousdeveloper.com",
     "services" : [
@@ -34,7 +34,7 @@
     "blog": "http://www.hugohaggmark.com",
     "services" : [
         { "name" : "github",        "url" : "http://github.com/hugohaggmark" },
-        { "name" : "instagram",     "url" : "https://instagram.com/hugohaggmark" }        
+        { "name" : "instagram",     "url" : "https://instagram.com/hugohaggmark" }
     ]
 }, {
     "img": "hamkla.jpg",
@@ -42,7 +42,7 @@
     "desc": "Glad och noggrann .NET-utvecklare. Hyser en stor passion för gitarrer; bygga, modda, spela... När han är ledig spenderar han helst tiden på resande fot med sin fru.",
     "phone": "0705-679640" ,
     "services" : [
-        { "name" : "github",        "url" : "http://github.com/hampusklarin" },        
+        { "name" : "github",        "url" : "http://github.com/hampusklarin" },
         { "name" : "linkedin",      "url" : "https://www.linkedin.com/in/hampusklarin" },
         { "name" : "key",           "url" : "https://keybase.io/hampusklarin" },
         { "name" : "instagram",     "url" : "https://instagram.com/hampusklarin" }
@@ -63,7 +63,7 @@
     "phone": "0733-585661",
     "services" : [
         { "name" : "twitter",     "url" : "http://twitter.com/j_elmstrom" },
-        { "name" : "github",        "url" : "http://github.com/jelmstrom" }        
+        { "name" : "github",        "url" : "http://github.com/jelmstrom" }
     ]
 }, {
     "img": "johanl.jpg",
