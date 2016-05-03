@@ -1,5 +1,4 @@
 html {
-  font-size: 60%;
   box-sizing: border-box; }
 
 *,
@@ -14,62 +13,111 @@ body {
 main > section {
   max-height: 40vh;
   min-height: 200px;
+  margin-bottom: 10px;
   overflow-y: hidden;
   padding: 3vh 0;
   position: relative;
-  transition: max-height 5s ease; }
+  transition: max-height 1s ease; }
+  main > section:last-child {
+    margin-bottom: 0; }
   main > section .expand {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 45%;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e859a+100&0+0,1+100 */
-    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.3) 90%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.3) 90%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 90%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
-    /* IE6-9 */ }
+    overflow: hidden; }
     main > section .expand .fa {
-      width: 95%;
       display: block;
       font-size: 150px;
       text-align: center;
+      line-height: .75;
       text-shadow: 0 10px 0 rgba(0, 0, 0, 0.15);
-      opacity: 0.3;
-      transition: opacity 0.5s ease; }
+      opacity: .3;
+      transition: opacity .5s ease; }
       main > section .expand .fa:before {
         margin: 0 auto; }
       main > section .expand .fa:hover {
-        opacity: 0.7;
+        opacity: .75;
+        cursor: pointer; }
+  main > section .contract {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.2); }
+    main > section .contract .fa {
+      display: block;
+      font-size: 36px;
+      text-align: center;
+      line-height: .9;
+      text-shadow: 0 10px 0 rgba(0, 0, 0, 0.15);
+      opacity: .3;
+      transition: opacity .5s ease; }
+      main > section .contract .fa:before {
+        margin: 0 auto; }
+      main > section .contract .fa:hover {
+        opacity: .75;
         cursor: pointer; }
   main > section.expanded {
-    max-height: 15000px; }
+    max-height: none; }
     main > section.expanded .expand {
       display: none; }
+    main > section.expanded .contract {
+      display: block; }
 
 section.logo {
   background-color: #ee5555;
-  min-height: 0; }
+  min-height: 0;
+  max-height: none; }
+  section.logo .row {
+    margin-bottom: 0; }
   section.logo img {
     max-height: 35vh;
-    height: 380px;
     margin: 0 auto;
     display: block; }
 
 section.about {
   background-color: #1e859a; }
+  section.about .expand {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e859a+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(0, 73, 94, 0) 0%, #1e859a 90%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 73, 94, 0) 0%, #1e859a 90%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 73, 94, 0) 0%, #1e859a 90%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
+    /* IE6-9 */ }
 
 section.aptitud-day {
   background-color: #7a9752; }
+  section.aptitud-day .expand {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e859a+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(72, 101, 32, 0) 0%, #7a9752 90%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(72, 101, 32, 0) 0%, #7a9752 90%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(72, 101, 32, 0) 0%, #7a9752 90%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
+    /* IE6-9 */ }
   section.aptitud-day .card-panel {
     background-color: #eee;
     color: #000; }
 
 section.contact {
-  background-color: #FEBE10; }
+  background-color: #febe10; }
+  section.contact .expand {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e859a+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(187, 123, 0, 0) 0%, #febe10 90%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(187, 123, 0, 0) 0%, #febe10 90%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(187, 123, 0, 0) 0%, #febe10 90%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
+    /* IE6-9 */ }
   section.contact .card {
     background-color: #eee;
     color: #000; }
@@ -87,8 +135,72 @@ section.contact {
   section.contact .links img {
     height: 60px; }
 
+section.fellows {
+  background-color: #ff6633; }
+  section.fellows .expand {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e859a+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(205, 52, 1, 0) 0%, #ff6633 90%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(205, 52, 1, 0) 0%, #ff6633 90%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(205, 52, 1, 0) 0%, #ff6633 90%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
+    /* IE6-9 */ }
+  section.fellows .fellow .card-panel {
+    overflow: hidden;
+    padding: 0;
+    background-color: #eee;
+    color: #000; }
+    section.fellows .fellow .card-panel .row {
+      padding: 20px; }
+    section.fellows .fellow .card-panel .info {
+      position: relative;
+      margin-bottom: 0; }
+      section.fellows .fellow .card-panel .info:before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e859a+100&0+0,1+100 */
+        background: -moz-linear-gradient(top, rgba(238, 238, 238, 0.5) 0, #eeeeee 30px);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(238, 238, 238, 0.5) 0, #eeeeee 30px);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(238, 238, 238, 0.5) 0, #eeeeee 30px);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
+        /* IE6-9 */ }
+      section.fellows .fellow .card-panel .info .desc {
+        height: 370px;
+        overflow-y: auto; }
+    section.fellows .fellow .card-panel .contact {
+      padding: 0 30px;
+      margin: 0;
+      background-color: rgba(0, 0, 0, 0.05);
+      clear: both; }
+      section.fellows .fellow .card-panel .contact .col {
+        padding: 0; }
+    section.fellows .fellow .card-panel ul > li {
+      display: inline; }
+      section.fellows .fellow .card-panel ul > li .fa {
+        font-size: 20px; }
+
 section.aptigram {
   background-color: #784e90; }
+  section.aptigram .expand {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e859a+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(70, 28, 94, 0) 0%, #784e90 90%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(70, 28, 94, 0) 0%, #784e90 90%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(70, 28, 94, 0) 0%, #784e90 90%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
+    /* IE6-9 */ }
   section.aptigram .polaroids {
     padding-left: 0;
     padding-right: 0; }
@@ -153,52 +265,6 @@ section.aptigram {
       text-align: left;
       padding: 0 0 0 5px;
       margin-bottom: 5px; }
-
-section.fellows {
-  background-color: #FF6633; }
-  section.fellows .fellow {
-    padding: 30px; }
-    section.fellows .fellow .card-panel {
-      overflow: hidden;
-      padding: 0;
-      background-color: #eee;
-      color: #000; }
-      section.fellows .fellow .card-panel .row {
-        padding: 20px; }
-      section.fellows .fellow .card-panel .info {
-        position: relative;
-        margin-bottom: 0; }
-        section.fellows .fellow .card-panel .info:before {
-          content: '';
-          display: block;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          height: 60px;
-          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e859a+100&0+0,1+100 */
-          background: -moz-linear-gradient(top, rgba(238, 238, 238, 0.5) 0, #eeeeee 30px);
-          /* FF3.6-15 */
-          background: -webkit-linear-gradient(top, rgba(238, 238, 238, 0.5) 0, #eeeeee 30px);
-          /* Chrome10-25,Safari5.1-6 */
-          background: linear-gradient(to bottom, rgba(238, 238, 238, 0.5) 0, #eeeeee 30px);
-          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
-          /* IE6-9 */ }
-        section.fellows .fellow .card-panel .info .desc {
-          height: 370px;
-          overflow-y: auto; }
-      section.fellows .fellow .card-panel .contact {
-        padding: 0 30px;
-        margin: 0;
-        background-color: rgba(0, 0, 0, 0.05);
-        clear: both; }
-        section.fellows .fellow .card-panel .contact .col {
-          padding: 0; }
-      section.fellows .fellow .card-panel ul > li {
-        display: inline; }
-        section.fellows .fellow .card-panel ul > li .fa {
-          font-size: 20px; }
 
 .section-img {
   float: left;

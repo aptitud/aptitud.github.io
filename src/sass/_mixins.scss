@@ -1,0 +1,13 @@
+@mixin expand-background($startColor,$endColor) {
+  .expand {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7db9e8+0,1e859a+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, $startColor 0%, $endColor 90%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $startColor 0%, $endColor 90%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $startColor 0%, $endColor 90%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
+    /* IE6-9 */
+  }
+}
