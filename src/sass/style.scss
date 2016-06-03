@@ -20,7 +20,7 @@ main > section {
   overflow-y: hidden;
   padding: 3vh 0;
   position: relative;
-  transition: max-height 0.3s ease;
+  transition: max-height .5s ease;
   &:last-child {
     margin-bottom: 0;
   }
@@ -34,7 +34,7 @@ main > section {
       display: block;
       font-size: 150px;
       text-align: center;
-      line-height: .75;
+      line-height: .6;
       text-shadow: 0 10px 0 rgba(0,0,0,.15);
       opacity: .3;
       transition: opacity .5s ease;
@@ -49,29 +49,53 @@ main > section {
   }
   .contract {
     display: none;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    background-color: rgba(0, 0, 0, .2);
-
-    .fa {
-      display: block;
-      font-size: 36px;
-      text-align: center;
-      line-height: .9;
-      text-shadow: 0 10px 0 rgba(0,0,0,.15);
-      opacity: .3;
-      transition: opacity .5s ease;
-      &:before {
-        margin: 0 auto;
-      }
-      &:hover {
-        opacity: .75;
-        cursor: pointer;
+    &.top {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 45%;
+      overflow: hidden;
+      .fa {
+        display: block;
+        font-size: 150px;
+        text-align: center;
+        line-height: .75;
+        text-shadow: 0 10px 0 rgba(0,0,0,.15);
+        opacity: .3;
+        transition: opacity .5s ease;
+        &:before {
+          margin: 0 auto;
+        }
+        &:hover {
+          opacity: .75;
+          cursor: pointer;
+        }
       }
     }
-    
+    &.bottom {
+       position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 40px;
+      background-color: rgba(0, 0, 0, .2);
+
+      .fa {
+        display: block;
+        font-size: 36px;
+        text-align: center;
+        line-height: .9;
+        text-shadow: 0 10px 0 rgba(0,0,0,.15);
+        opacity: .3;
+        transition: opacity .5s ease;
+        &:before {
+          margin: 0 auto;
+        }
+        &:hover {
+          opacity: .75;
+          cursor: pointer;
+        }
+      }
+    }
   }
   &.expanded {
     max-height: none;

@@ -18,7 +18,7 @@ main > section {
   overflow-y: hidden;
   padding: 3vh 0;
   position: relative;
-  transition: max-height 0.3s ease; }
+  transition: max-height .5s ease; }
   main > section:last-child {
     margin-bottom: 0; }
   main > section .expand {
@@ -31,7 +31,7 @@ main > section {
       display: block;
       font-size: 150px;
       text-align: center;
-      line-height: .75;
+      line-height: .6;
       text-shadow: 0 10px 0 rgba(0, 0, 0, 0.15);
       opacity: .3;
       transition: opacity .5s ease; }
@@ -41,25 +41,45 @@ main > section {
         opacity: .75;
         cursor: pointer; }
   main > section .contract {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.2); }
-    main > section .contract .fa {
-      display: block;
-      font-size: 36px;
-      text-align: center;
-      line-height: .9;
-      text-shadow: 0 10px 0 rgba(0, 0, 0, 0.15);
-      opacity: .3;
-      transition: opacity .5s ease; }
-      main > section .contract .fa:before {
-        margin: 0 auto; }
-      main > section .contract .fa:hover {
-        opacity: .75;
-        cursor: pointer; }
+    display: none; }
+    main > section .contract.top {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 45%;
+      overflow: hidden; }
+      main > section .contract.top .fa {
+        display: block;
+        font-size: 150px;
+        text-align: center;
+        line-height: .75;
+        text-shadow: 0 10px 0 rgba(0, 0, 0, 0.15);
+        opacity: .3;
+        transition: opacity .5s ease; }
+        main > section .contract.top .fa:before {
+          margin: 0 auto; }
+        main > section .contract.top .fa:hover {
+          opacity: .75;
+          cursor: pointer; }
+    main > section .contract.bottom {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.2); }
+      main > section .contract.bottom .fa {
+        display: block;
+        font-size: 36px;
+        text-align: center;
+        line-height: .9;
+        text-shadow: 0 10px 0 rgba(0, 0, 0, 0.15);
+        opacity: .3;
+        transition: opacity .5s ease; }
+        main > section .contract.bottom .fa:before {
+          margin: 0 auto; }
+        main > section .contract.bottom .fa:hover {
+          opacity: .75;
+          cursor: pointer; }
   main > section.expanded {
     max-height: none; }
     main > section.expanded .expand {
