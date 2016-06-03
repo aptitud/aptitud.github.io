@@ -15,7 +15,7 @@ main > section {
   max-height: 40vh;
   min-height: 200px;
   margin-bottom: 10px;
-  overflow-y: hidden;
+  overflow-y: scroll;
   padding: 3vh 0;
   position: relative;
   transition: max-height 0.3s ease; }
