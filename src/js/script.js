@@ -7,8 +7,7 @@ $(document).ready(function() {
   })
   $('section').on('click', '.contract', function(e) {
     var $section = $(this).closest('section');
-    $section.prop('style', '');
-    $section.height($section.data('init-height'));
+    $section.css('max-height', $section.data('init-height'));
     $section.removeClass('expanded');
   })
 });
