@@ -1,7 +1,8 @@
 $(document).ready(function() {
   $('section').on('click', '.expand', function(e) {
     var $section = $(this).closest('section');
-    $section.data('init-height', $section.height());
+    $section.data('max-height', $section.css('max-height'));
+    console.log($section.css('max-height'));
     $section.css('max-height', $section[0].scrollHeight);
     $section.addClass('expanded');
   })
