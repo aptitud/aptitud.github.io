@@ -20,7 +20,7 @@ main > section {
   overflow-y: hidden;
   padding: 3vh 0;
   position: relative;
-  transition: max-height 1s ease;
+  transition: max-height 0.3s ease;
   &:last-child {
     margin-bottom: 0;
   }
