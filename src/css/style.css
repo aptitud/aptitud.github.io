@@ -29,6 +29,9 @@ main > section {
     overflow: hidden; }
     main > section .expand .fa {
       display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
       font-size: 150px;
       text-align: center;
       line-height: .6;
