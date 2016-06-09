@@ -10,19 +10,40 @@ html {
   box-sizing: inherit;
 }
 body {
+//  background: transparent url(/images/aptibilder.png) no-repeat center 20px fixed;
+//  background-size: 300%;
+//	background-color: rgb(238, 85, 85);
+	background-color: #333;
   color: #fff;
   -webkit-font-smoothing: antialiased;
 }
+
+main .parallax-container {
+	position: fixed;
+	width: 100%;
+	height: 450px;
+	.parallax {
+		img {
+			display: block;
+		}
+	}
+}
+
 main > section {
   max-height: 250px;
   min-height: 200px;
-  margin-bottom: 10px;
+  border-bottom: 10px solid #fff;
   overflow-y: hidden;
-  padding: 20px 0;
+  padding: 20px 0 40px 0;
   position: relative;
   transition: max-height .5s ease;
   &:last-child {
-    margin-bottom: 0;
+    border-bottom: 0 none;
+  }
+  h2 img {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
   }
   .expand {
     position: absolute;
@@ -110,24 +131,34 @@ main > section {
     }
   }
 }
-section.logo {
-  background-color: rgb(238, 85, 85);
+#logo {
   min-height: 0;
   max-height: none;
+  padding: 0;
+  margin-bottom: 0;
   .row {
     margin-bottom: 0;
   }
-  img {
-    max-height: 240px;
-    margin: 0 auto;
+  .responsive-img {
+    max-height: 280px;
+    margin: 40px auto 10px auto;
     display: block;
   }
+  .parallax-container {
+	  height: 280px;
+  }
+  .links {
+	margin-bottom: 30px;
+	img {
+		height: 50px;
+	}
+  }
 }
-section.about {
+#about {
   background-color: rgb(30, 133, 154);
   @include expand-background(rgba(0, 73, 94, 0),rgba(30, 133, 154, 1));
 }
-section.aptitud-day {
+#aptitud-day {
   background-color: rgb(122, 151, 82);
   @include expand-background(rgba(72, 101, 32, 0),rgba(122, 151, 82, 1));
   .card-panel {
@@ -135,7 +166,7 @@ section.aptitud-day {
     color: #000;
   }
 }
-section.contact {
+#contact {
   background-color: rgb(254,190,16);
   @include expand-background(rgba(187, 123, 0, 0),rgba(254, 190, 16, 1));
   .card {
@@ -158,14 +189,18 @@ section.contact {
     }
   }
   .links {
-    img {
-      height: 60px;
-    }
+	margin-top: 10px;
+	img {
+		height: 60px;
+	}
   }
 }
-section.fellows {
+#fellows {
   background-color: rgb(255,102,51);
   @include expand-background(rgba(205, 52, 1, 0),rgba(255, 102, 51, 1));
+  #fellow-list {
+	  margin: 0 .75rem;
+  }
   .fellow {
     .card-panel {
       overflow: hidden;
@@ -199,10 +234,17 @@ section.fellows {
         .desc {
           height: 370px;
           overflow-y: auto;
+		  h4 {
+			  margin-top: .5rem;
+		  }
+		  p {
+			  margin: 0;
+			  line-height: 1.2;
+		  }
         }
       }
       .contact {
-        padding: 0 30px;
+        padding: 0 20px;
         margin: 0;
         background-color: rgba(0,0,0,0.05);
         clear: both;
@@ -219,7 +261,7 @@ section.fellows {
     }
   }
 }
-section.aptigram {
+#aptigram {
   background-color: rgb(120,78,144);
   @include expand-background(rgba(70, 28, 94, 0),rgba(120, 78, 144, 1));
 
@@ -305,7 +347,7 @@ section.aptigram {
 }
 .section-img {
   float: left;
-  margin: 20px 50px 20px 0;
+  margin: 0 30px 20px 0;
 }
 .hidden-link {
   color: #fff;
@@ -366,5 +408,63 @@ iPad 3
 
 /* iPhone 4 ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
 /* Styles */
 }
