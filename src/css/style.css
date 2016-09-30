@@ -12,6 +12,55 @@ body {
   color: #fff;
   -webkit-font-smoothing: antialiased; }
 
+.navbar nav {
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  box-sizing: content-box;
+  border-bottom: 10px solid #fff; }
+  .navbar nav .button-collapse {
+    padding: 0 10px; }
+  .navbar nav ul a {
+    font-weight: bold;
+    font-size: 15px; }
+  .navbar nav .brand-logo {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, height 0.2s, opacity 0.2s linear; }
+    .navbar nav .brand-logo img {
+      height: 0;
+      transition: height 0.2s linear;
+      margin-top: -15px; }
+  .navbar nav.pinned .brand-logo {
+    visibility: visible;
+    opacity: 1; }
+    .navbar nav.pinned .brand-logo img {
+      transition: none;
+      height: 117px; }
+
+.navbar .nav-wrapper {
+  padding: 0 20px; }
+
+.navbar .side-nav {
+  border-right: 10px solid #fff; }
+  .navbar .side-nav li {
+    margin-bottom: 10px; }
+    .navbar .side-nav li a {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 0 1px rgba(0, 0, 0, 0.5); }
+  .navbar .side-nav .about {
+    background-color: #1e859a; }
+  .navbar .side-nav .aptitud-day {
+    background-color: #7a9752; }
+  .navbar .side-nav .contact {
+    background-color: #febe10; }
+  .navbar .side-nav .fellows {
+    background-color: #ff6633; }
+  .navbar .side-nav .aptigram {
+    background-color: #784e90; }
+
 main .parallax-container {
   position: fixed;
   width: 100%;
@@ -116,7 +165,12 @@ main > section {
   #logo .parallax-container {
     height: 280px; }
   #logo .links {
-    margin-bottom: 30px; }
+    float: none;
+    width: auto;
+    margin-bottom: 30px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 0; }
     #logo .links img {
       height: 50px; }
 
