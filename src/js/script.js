@@ -17,6 +17,5 @@ $(document).ready(function () {
 	});
 	$('.button-collapse').sideNav({closeOnClick:true});
 	setExplicitHeightOfNavbar();
-
-	$('.navbar nav').pushpin({ top: $('.navbar nav').offset().top });
+	$('.navbar nav').pushpin({ top: $('#logo').outerHeight() });
 });
