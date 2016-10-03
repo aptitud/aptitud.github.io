@@ -1,5 +1,6 @@
-var setExplicitHeightOfNavbar = function() {
+var initPushpinMenu = function() {
 	$('.navbar').height($('.navbar').height());
+	$('.navbar nav').pushpin({ top: $('#logo').outerHeight() });
 }
 
 $(document).ready(function () {
@@ -16,6 +17,6 @@ $(document).ready(function () {
 		}
 	});
 	$('.button-collapse').sideNav({closeOnClick:true});
-	setExplicitHeightOfNavbar();
-	$('.navbar nav').pushpin({ top: $('#logo').outerHeight() });
+
+	setTimeout(initPushpinMenu,1000);
 });
