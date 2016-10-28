@@ -78,10 +78,14 @@ main > section {
   transition: max-height .5s ease; }
   main > section:last-child {
     border-bottom: 0 none; }
-  main > section h2 img {
-    width: 300px;
-    display: block;
-    margin: 0 auto; }
+  main > section h2 {
+    margin-top: 0;
+    text-align: center;
+    text-transform: lowercase;
+    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 0 7px 0 rgba(0, 0, 0, 0.15); }
   main > section .expand {
     position: absolute;
     bottom: 0;
@@ -186,6 +190,9 @@ main > section {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
     /* IE6-9 */ }
+  #about h2 {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg); }
 
 #aptitud-day {
   background-color: #7a9752; }
@@ -199,6 +206,9 @@ main > section {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
     /* IE6-9 */ }
+  #aptitud-day h2 {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg); }
   #aptitud-day .card-panel {
     background-color: #eee;
     color: #000; }
@@ -215,6 +225,9 @@ main > section {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
     /* IE6-9 */ }
+  #contact h2 {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg); }
   #contact .card {
     background-color: #eee;
     color: #000; }
@@ -246,6 +259,9 @@ main > section {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
     /* IE6-9 */ }
+  #fellows h2 {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg); }
   #fellows #fellow-list {
     margin: 0 .75rem; }
   #fellows .fellow .card-panel {
@@ -307,6 +323,9 @@ main > section {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e859a',GradientType=0 );
     /* IE6-9 */ }
+  #aptigram h2 {
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg); }
   #aptigram .polaroids {
     padding-left: 0;
     padding-right: 0; }
@@ -326,10 +345,12 @@ main > section {
       color: #333;
       font-size: 14px;
       -webkit-transform: rotate(-2deg);
-      -moz-transform: rotate(-2deg); }
+      -moz-transform: rotate(-2deg);
+      transform: rotate(-2deg); }
       #aptigram .polaroids a:hover {
         -webkit-transform: scale(1.25) !important;
         -moz-transform: scale(1.25) !important;
+        transform: scale(1.25) !important;
         position: relative;
         z-index: 5; }
       #aptigram .polaroids a:after {
@@ -347,11 +368,13 @@ main > section {
       #aptigram .polaroids .polariod:nth-child(3n) a {
         -webkit-transform: none;
         -moz-transform: none;
+        transform: none;
         position: relative;
         top: -5px; }
       #aptigram .polaroids .polariod:nth-child(5n) a {
         -webkit-transform: rotate(5deg);
         -moz-transform: rotate(5deg);
+        transform: rotate(5deg);
         position: relative;
         right: 5px; }
       #aptigram .polaroids .polariod:nth-child(8n) a {
