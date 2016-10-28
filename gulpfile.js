@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
   connect = require('gulp-connect'),
   concat = require('gulp-concat'),
+  minify = require('gulp-minify-css'),
   runSequence = require('run-sequence'),
   sass = require('gulp-sass');
 
@@ -25,6 +26,7 @@ gulp.task('sass', function() {
   return gulp.src('./src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
 	.pipe(concat('style.css'))
+	.pipe(minify())
     .pipe(gulp.dest('./src/css'));
 });
 
