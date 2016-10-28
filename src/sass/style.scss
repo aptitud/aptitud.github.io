@@ -49,7 +49,7 @@ body {
 			img {
 				height: 0;
 				transition: height 0.2s linear;
-				margin-top: -15px;
+				margin-top: -13px;
 			}
 		}
 		&.pinned {
@@ -58,7 +58,7 @@ body {
 				opacity: 1;
 				img {
 					transition: none;
-					height: 117px;
+					height: 118px;
 				}
 			}	
 		}
