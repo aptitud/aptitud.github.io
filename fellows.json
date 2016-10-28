@@ -194,14 +194,4 @@
         { "name" : "linkedin", "url" : "https://se.linkedin.com/in/emil-ingridsson-24113026" },
         { "name" : "twitter", "url" : "https://twitter.com/emilingridsson" }
      ]
-}, {
-    "img": "erik.jpg",
-    "name": "Erik Sundell",
-	"phone": "073-7416629",
-    "desc": "Nyfiken och analytisk .NET-utvecklare som älskar att lära sig nya saker. Ägnar sig helst åt segling, tennis och fotboll på fritiden.",
-    "services" : [
-        { "name" : "linkedin", "url" : "https://www.linkedin.com/in/erik-sundell-29ab0676" },
-		{ "name" : "github", "url" : "http://github.com/sunker" },
-        { "name" : "twitter", "url" : "https://twitter.com/sunker87" }
-     ]
 }]
