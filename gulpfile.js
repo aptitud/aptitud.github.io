@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
   connect = require('gulp-connect'),
+  concat = require('gulp-concat'),
   runSequence = require('run-sequence'),
   sass = require('gulp-sass');
 
@@ -23,6 +24,7 @@ gulp.task('reload', function(callback) {
 gulp.task('sass', function() {
   return gulp.src('./src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
+	.pipe(concat('style.css'))
     .pipe(gulp.dest('./src/css'));
 });
 

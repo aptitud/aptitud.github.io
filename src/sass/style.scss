@@ -118,10 +118,10 @@ main > section {
 		margin-top: 0;
 		text-align: center;
 		text-transform: lowercase;
-		font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+		font-family: 'Comic Sans MS', 'Comic Sans', 'Comic Neue', cursive, sans-serif;
 		font-size: 80px;
-		font-weight: bold;
 		text-shadow: 0 7px 0 rgba(0,0,0,.15);
+		-webkit-font-smoothing: initial;
 	}
 	.expand {
 		position: absolute;
