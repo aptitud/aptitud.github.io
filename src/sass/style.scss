@@ -459,9 +459,12 @@ main > section {
 		}
 	}
 }
+.section-img-container {
+	width: auto;
+	margin-bottom: 1em;
+}
 .section-img {
-	float: left;
-	margin: 0 30px 20px 0;
+	float: none;
 }
 .hidden-link {
 	color: #fff;
@@ -478,6 +481,18 @@ main > section {
 		letter-spacing: -3px;
 	}
 }
+
+@media only screen and (min-width : 540px) {
+	.section-img-container {
+		max-width: 60%;
+		float: left;
+		padding-right: 30px;
+	}
+	.section-img {
+		float: left;
+	}
+}
+
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
