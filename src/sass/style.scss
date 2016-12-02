@@ -327,13 +327,13 @@ main > section {
 	}
 	.fellow {
 		display: inline-block;
+		vertical-align: bottom;
 		.card-panel {
 			overflow: hidden;
 			padding: 0;
 			background-color: #eee;
 			color: #000;
 			.info-container {
-				position: relative;
 				.info {
 					padding: 15px 15px 0 15px;
 					margin-bottom: 0;
