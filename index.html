@@ -247,7 +247,7 @@
 						$.getJSON("instagram.json", function(json) {
               console.log('json', json);
               $(json).each(function(index, image) {
-                $('#instacontainer').append("<div class='col s12 m6 l4 polariod'><a href='http://www.instagram.com/aptitud_sthlm/' title='" + image.Caption + "'><img src='" + image.Url + "'/><span class='location'>" + image.Location + "</span></a></li>");
+                $('#instacontainer').append("<div class='col s6 m4 l2 polariod'><a href='http://www.instagram.com/aptitud_sthlm/' title='" + image.Caption + "'><img src='" + image.Url + "'/><span class='location'>" + image.Location + "</span></a></li>");
               });
             });
 					</script>
