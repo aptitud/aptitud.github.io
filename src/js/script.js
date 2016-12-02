@@ -46,7 +46,7 @@ var fellowsController = (function() {
 		});
 	}
 
-	var safeUpEmailAddresses = function() {console.log('new');
+	var safeUpEmailAddresses = function() {
 		$('a[rel=email]').each(function() {
 			// Modify the mailto: value
 			var mailtoVal = $(this).attr('href')
