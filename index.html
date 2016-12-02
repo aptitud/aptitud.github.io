@@ -195,6 +195,7 @@
 					</p>
 				</div>
 			</div>
+
 			<script id="fellow-template" type="text/x-handlebars-template">
 				<div class="fellow col s12 m6 l4">
 					<div class="card-panel z-depth-2 flow-text">
@@ -208,16 +209,16 @@
 							</div>
 						</div>
 						<ul class="contact">
-							<li><a rel='email' href="[email]{{name}}" target="_blank"><span><i class="fa fa-envelope fa-fw"></i></span></a></li>
+							<li><a rel="email" href="[email]{{name}}" title="Skicka e-post till {{name}}"><i class="fa fa-envelope fa-fw"></i></a></li>
 							{{#if phone}}
-								<li><a href="tel:{{phone}}"><span><i class="fa fa-phone fa-fw"></i></span></a></li>
+								<li><a href="tel:{{phone}}"><i class="fa fa-phone fa-fw"></i></a></li>
 							{{/if}}
 							{{#if blog}}
-								<li><a href="{{blog}}" target="_blank"><span><i class="fa fa-globe fa-fw"></i></span></a></li>
+								<li><a href="{{blog}}" target="_blank"><i class="fa fa-globe fa-fw"></i></a></li>
 							{{/if}}
 							{{#if services}}
 								{{#each services}}
-									<li><a href="{{this.url}}" target="_blank"><span><i class="fa fa-{{this.name}} fa-fw"></i></span></a></li>
+									<li><a href="{{this.url}}" target="_blank"><i class="fa fa-{{this.name}} fa-fw"></i></a></li>
 								{{/each}}
 							{{/if}}
 						</ul>
@@ -225,99 +226,8 @@
 				</div>
 			</script>
 
-			<div id="fellowPage">
-					<div id="fellow-list" class="row"></div>
-			</div>
-			<script>
-				function shuffle(o) {
-          for (var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-          return o;
-        }
+			<div id="fellow-list" class="row"></div>
 
-        function layoutFellows(fellows) {
-          var fellowTemplate = Handlebars.compile($("#fellow-template").html());
-          var layoutDiv = $("#fellow-list");
-
-          shuffle(fellows);
-          fellows.forEach(function(fellow, index) {
-            layoutDiv.append(fellowTemplate(fellow));
-          });
-        }
-
-        function safeUpEmailAddresses() {
-          $("a[rel='email']").each(function() {
-            // Modify the mailto: value
-            var mailtoVal = $(this).attr('href');
-            mailtoVal = mailtoVal.replace(" ", ".");
-            mailtoVal = mailtoVal.toLowerCase();
-            mailtoVal = mailtoVal.replace("[email]", "mailto:");
-            mailtoVal = mailtoVal.replace("å", "a");
-            mailtoVal = mailtoVal.replace("ä", "a");
-            mailtoVal = mailtoVal.replace("ö", "o");
-            mailtoVal = mailtoVal.replace("ü", "u");
-
-            mailtoVal = mailtoVal + "@" + "aptitud" + ".se";
-
-            //console.log(mailtoVal);
-
-            // Auto-generate title tags for users
-            var mailtoTitle = mailtoVal.replace("mailto:", "Maila till ");
-            $(this).attr('title', mailtoTitle);
-
-            // onClick Event
-            $(this).click(function() {
-              window.open(mailtoVal, "_blank");
-              return false;
-            });
-          });
-        }
-
-        $.getJSON("fellows.json").done(function(fellows) {
-          layoutFellows(fellows);
-          safeUpEmailAddresses();
-          addDnDSupport();
-        });
-
-        var dragSrc = null;
-        var addDnDSupport = function() {
-          $(".fellow").each(function(index) {
-            $(this).attr('draggable', 'true');
-            $(this).bind('dragstart', function(e) {
-              $(this).fadeTo("slow", 0.4);
-              dragSrc = this;
-              e.originalEvent.dataTransfer.effectAllowed = 'move';
-              e.originalEvent.dataTransfer.setData('text/html', $(this).html());
-            });
-            $(this).bind('dragover', function(e) {
-              if (e.preventDefault) {
-                e.preventDefault();
-              }
-              return false;
-            });
-            $(this).bind('dragenter', function(e) {
-
-            });
-            $(this).bind('dragleave', function(e) {
-
-            });
-            $(this).bind('drop', function(e) {
-              if (e.stopPropagation) {
-                e.stopPropagation();
-              }
-              if (dragSrc != this) {
-                dragSrc.innerHTML = this.innerHTML;
-                this.innerHTML = e.originalEvent.dataTransfer.getData('text/html');
-                $(dragSrc).fadeTo("slow", 1.0);
-                $(this).fadeTo("slow", 1.0);
-              }
-              return false;
-            });
-            $(this).bind('dragend', function(e) {
-
-            });
-          })
-        };
-			</script>
 			<div class="expand">
 				<i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i>
 			</div>
