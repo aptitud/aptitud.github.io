@@ -14,8 +14,7 @@
 	<link rel="stylesheet" href="src/css/style.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-	<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="images/favicon/favicon.ico">
@@ -39,9 +38,7 @@
 	<meta name="msapplication-TileImage" content="images/favicon/favicon-144.png">
 	<meta name="msapplication-config" content="images/favicon/browserconfig.xml">
 	<!-- Favicon end -->
-
 </head>
-
 <body>
 	<main>
 		<div class="parallax-container">
@@ -117,16 +114,11 @@
 					</p>
 				</div>
 			</div>
-			<div class="expand">
-				<i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i>
-			</div>
-			<div class="contract top">
-				<i class="fa fa-chevron-up animated infinite pulse" aria-hidden="true"></i>
-			</div>
-			<div class="contract bottom">
-				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-			</div>
+			<div class="expand"><i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i></div>
+			<div class="contract top"><i class="fa fa-chevron-up animated infinite pulse" aria-hidden="true"></i></div>
+			<div class="contract bottom"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
 		</section>
+
 		<section id="aptitud-day">
 			<div class="container row">
 				<div class="col s12 flow-text">
@@ -172,16 +164,11 @@
 					</div-->
 				</div>
 			</div>
-			<div class="expand">
-				<i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i>
-			</div>
-			<div class="contract top">
-				<i class="fa fa-chevron-up animated infinite pulse" aria-hidden="true"></i>
-			</div>
-			<div class="contract bottom">
-				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-			</div>
+			<div class="expand"><i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i></div>
+			<div class="contract top"><i class="fa fa-chevron-up animated infinite pulse" aria-hidden="true"></i></div>
+			<div class="contract bottom"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
 		</section>
+
 		<section id="fellows">
 			<div class="container row">
 				<div class="col s12 flow-text">
@@ -228,16 +215,11 @@
 
 			<div id="fellow-list" class="row"></div>
 
-			<div class="expand">
-				<i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i>
-			</div>
-			<div class="contract top">
-				<i class="fa fa-chevron-up animated infinite pulse" aria-hidden="true"></i>
-			</div>
-			<div class="contract bottom">
-				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-			</div>
+			<div class="expand"><i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i></div>
+			<div class="contract top"><i class="fa fa-chevron-up animated infinite pulse" aria-hidden="true"></i></div>
+			<div class="contract bottom"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
 		</section>
+		
 		<section id="aptigram">
 			<div class="container row">
 				<div class="col s12">
@@ -245,24 +227,18 @@
 					<div class="rows polaroids" id="instacontainer"></div>
 					<script type="text/javascript">
 						$.getJSON("instagram.json", function(json) {
-              console.log('json', json);
-              $(json).each(function(index, image) {
-                $('#instacontainer').append("<div class='col s6 m4 l2 polariod'><a href='http://www.instagram.com/aptitud_sthlm/' title='" + image.Caption + "'><img src='" + image.Url + "'/><span class='location'>" + image.Location + "</span></a></li>");
-              });
-            });
+							$(json).each(function(index, image) {
+								$('#instacontainer').append("<div class='col s6 m4 l2 polariod'><a href='http://www.instagram.com/aptitud_sthlm/' title='" + image.Caption + "'><img src='" + image.Url + "'/><span class='location'>" + image.Location + "</span></a></li>");
+							});
+						});
 					</script>
 				</div>
 			</div>
-			<div class="expand">
-				<i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i>
-			</div>
-			<div class="contract top">
-				<i class="fa fa-chevron-up animated infinite pulse" aria-hidden="true"></i>
-			</div>
-			<div class="contract bottom">
-				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-			</div>
+			<div class="expand"><i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i></div>
+			<div class="contract top"><i class="fa fa-chevron-up animated infinite pulse" aria-hidden="true"></i></div>
+			<div class="contract bottom"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
 		</section>
+
 		<section id="contact">
 			<div class="container row">
 				<div class="col s12">
@@ -309,20 +285,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="expand">
-				<i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i>
-			</div>
-			<div class="contract top">
-				<i class="fa fa-chevron-up animated infinite pulse" aria-hidden="true"></i>
-			</div>
-			<div class="contract bottom">
-				<i class="fa fa-chevron-up" aria-hidden="true"></i>
-			</div>
+			<div class="expand"><i class="fa fa-chevron-down animated infinite pulse" aria-hidden="true"></i></div>
+			<div class="contract top"><i class="fa fa-chevron-up animated infinite pulse" aria-hidden="true"></i></div>
+			<div class="contract bottom"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
 		</section>
 	</main>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 	<script src="src/js/script.js"></script>
-</body>
 
+</body>
 </html>
