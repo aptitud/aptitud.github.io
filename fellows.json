@@ -18,7 +18,7 @@
     "img": "marham.jpg",
     "name": "Marcus Hammarberg",
     "phone": "0768-725878",
-    "desc": "Coach med agilt/lean fokus och stark koppling till det praktiska. .NET / JavaScript utvecklare i botten. Motto: Få agile att fungera i praktiken! Gift, 3 barn, bott i Indonesien. Skrivit <a href='http://bit.ly/theKanbanBook'>Kanban in Action</a>",
+    "desc": "Coach med agilt/lean fokus och stark koppling till det praktiska. .NET / JavaScript utvecklare i botten. Motto: Få agile att fungera i praktiken! Gift, 3 barn, bott i Indonesien. Har skrivit boken Kanban in Action",
     "blog": "http://www.marcusoft.net",
     "services" : [
         { "name" : "twitter",        "url" : "http://twitter.com/marcusoftnet" },
