@@ -204,4 +204,15 @@
 		{ "name" : "github", "url" : "http://github.com/sunker" },
         { "name" : "twitter", "url" : "https://twitter.com/sunker87" }
      ]
+},
+{
+    "img": "fresun.jpg",
+    "name": "Fredrik Sundberg",
+    "desc": "Utvecklare med fokus på Java, DevOps och Continuous Delivery som försöker göra det svåra så enkelt som möjligt. Trebarnsfar i Årsta med smak för racketsport.",
+    "phone": "0703-442113",
+    "services" : [
+        { "name" : "github",        "url" : "https://github.com/KingBuzzer" },
+        { "name" : "twitter",        "url" : "https://twitter.com/fredriksu" },
+        { "name" : "linkedin",       "url" : "https://www.linkedin.com/in/fredrik-sundberg-84246830" }
+    ]
 }]
