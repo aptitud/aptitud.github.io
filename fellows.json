@@ -215,4 +215,10 @@
         { "name" : "twitter",        "url" : "https://twitter.com/fredriksu" },
         { "name" : "linkedin",       "url" : "https://www.linkedin.com/in/fredrik-sundberg-84246830" }
     ]
+},
+{
+    "img": "profile_pic.png",
+    "name": "Jonas Ehrenfried",
+    "desc": "Javautvecklare som gillar ordning och reda och enkla lösningar. Solnabo som försöker hinna med att träna, umgås med vänner och bränna av en tv-serier eller två på fritiden.",
+    "phone": "076-145 93 53"
 }]
