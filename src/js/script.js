@@ -118,7 +118,7 @@ $(document).ready(function () {
 	$('.navbar').on('click', 'li a', navToSection);
 
 	$(window).on('scroll',function(){
-		$('.parallax img').css('bottom', (window.pageYOffset/2+'px'));
+		$('.parallax img').css('transform', 'translate(-50%,-'+(Math.floor(window.pageYOffset/2)+'px')+')');
 	});
 
 	setTimeout(initPushpinMenu,1000);
