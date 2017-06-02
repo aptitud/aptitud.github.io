@@ -180,4 +180,12 @@
 		{ "name" : "github", "url" : "http://github.com/sunker" },
         { "name" : "twitter", "url" : "https://twitter.com/sunker87" }
      ]
+},{
+    "img": "giovannie.jpg",
+    "name": "Giovannie Malmqvist",
+    "desc": "Glad och lyhörd säljare, tvåbarnsfader, gillar att hänga med i trender och lära sig nya saker",
+    "phone": "0703075078",
+        "services" : [
+    		{ "name" : "linkedin",       "url" : "https://www.linkedin.com/in/giovanniejohanson/" }
+           ]
 }]
