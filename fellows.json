@@ -192,11 +192,6 @@
         "name": "Robert Olofsson",
         "desc": "Ambitiös och kreativ .Net-utvecklare med hög leveransprecision. Galen i gäddfiske och halvusel som hemmasnickare. "
     }, {
-        "img": "tomasn.jpg",
-        "name": "Tomas Näslund",
-        "desc": "Grundare och glad kollega som arbetar med försäljning, rekrytering och andra bolagsbitar. Sin lediga tid spenderas ute på Ingarö med familjen. Stort mat och dryckesintresse som kompenseras med att träna thaiboxning. Ring om du vill veta mer om oss!",
-        "phone": "0703-777980"
-    }, {
         "img": "magnush.jpg",
         "name": "Magnus Hübner",
         "desc": "Frontend-utvecklare som gillar sol och snö, gärna i kombination. Ogärna på sommaren. Pappa till två. Gillar skidor, cykel och boll. Allergisk mot saker som inte funkar som de borde. Bosatt söder om söder, lantligt men modernt med närhet till kontinenten."
@@ -216,10 +211,6 @@
         "img": "jonasa.jpg",
         "name": "Jonas Ahnlund",
         "desc": "Systemutvecklande pappa med passion för matlagning, old-school gaming och kodkvalitet (inte nödvändigtvis rankat i den ordningen)."
-    }, {
-        "img": "profile_pic.png",
-        "name": "Fredric Ståhlgren",
-        "desc": "Brinner för att ha kul i jobbet. Gillar att få organisationer och team att jobba effektivt och tillsammans. Ledare med utgångspunkt i både individen, gruppen, affären och tekniken."
     }, {
         "img": "johnm.jpg",
         "name": "John Magnusson",
