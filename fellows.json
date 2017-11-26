@@ -232,7 +232,7 @@
     }, {
         "img": "chrfre.jpg",
         "name": "Christian Fredh",
-        "desc": "Engagerad och ambitiös utvecklare inom .NET och webb som vill göra skillnad. Husse och Södermalmsbo som gillar tiodans, klättring, politik och äventyr.",
+        "desc": "Engagerad utvecklare inom .NET och webb som gillar att göra skillnad. Husse och Södermalmsbo som gillar klättring, tiodans, politik och äventyr.",
         "phone": "072-213 55 51",
         "services": [{
                 "name": "linkedin",
@@ -337,5 +337,11 @@
                 "url": "https://www.linkedin.com/in/giovanniejohanson/"
             }
         ]
+    },
+    {
+        "img": "khaggma.jpg",
+        "name": "Katrin Häggmark",
+        "desc": "Glad livsnjutare med positivt driv. Tre barn, en man, en hund och en häst. Jobbar bla med konsultvård, rekrytering och företagsutveckling, välkommen in till oss!",
+        "phone": "070-888 21 86"
     }
 ]
