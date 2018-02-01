@@ -344,4 +344,12 @@
         "desc": "Glad livsnjutare med positivt driv. Tre barn, en man, en hund och en häst. Jobbar bla med konsultvård, rekrytering och företagsutveckling, välkommen in till oss!",
         "phone": "070-888 21 86"
     }
+ }, {
+    "img": "",
+    "name": "Maria Aspenberg",
+    "desc": "Driven, strukturerad och ödmjuk Produktägare och Projektledare. Tvåbarnsmor som mår bra av skärgården, löpning och skidåkning.",
+    "phone": "070-3589169",
+    "services" : [
+        { "name" : "linkedin",     "url" : "https://www.linkedin.com/in/maria-aspenberg-b8b14556/" }
+    ]
 ]
