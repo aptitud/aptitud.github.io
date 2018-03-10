@@ -342,14 +342,18 @@
         "img": "khaggma.jpg",
         "name": "Katrin Häggmark",
         "desc": "Glad livsnjutare med positivt driv. Tre barn, en man, en hund och en häst. Jobbar bla med konsultvård, rekrytering och företagsutveckling, välkommen in till oss!",
-        "phone": "070-888 21 86"
-    
- }, {
-    "img": "profile_pic.png",
-    "name": "Maria Aspenberg",
-    "desc": "Driven, strukturerad och ödmjuk produktägare och projektledare. Tvåbarnsmor som mår bra av skärgården, löpning och skidåkning.",
-    "phone": "070-3589169",
-    "services" : [
-        { "name" : "linkedin",     "url" : "https://www.linkedin.com/in/maria-aspenberg-b8b14556/" }
-    ]
- }]
+        "phone": "070-888 21 86"   
+    }, {
+        "img": "profile_pic.png",
+        "name": "Maria Aspenberg",
+        "desc": "Driven, strukturerad och ödmjuk produktägare och projektledare. Tvåbarnsmor som mår bra av skärgården, löpning och skidåkning.",
+        "phone": "070-3589169",
+        "services" : [
+            { "name" : "linkedin",     "url" : "https://www.linkedin.com/in/maria-aspenberg-b8b14556/" }
+        ]
+    }, {
+        "img": "profile_pic.png",
+        "name": "Richard Danninger",
+        "desc": "Utvecklare som uppskattar att avveckla det onödigt invecklade. Löser gärna problem med en skopa JavaScript, en dos Rust eller ett enkelt shell-script. Kopplar helst av med en Netflix-binge."
+    }
+]
