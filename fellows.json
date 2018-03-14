@@ -1,7 +1,7 @@
 [{
         "img": "perj.jpg",
         "name": "Per Jansson",
-        "desc": "Nyfiken och otålig utvecklare (web, java, mobil) som älskar att bygga grymma, användbara system och hjälpa andra göra detsamma. Gift, fyrbarnsfarsa och sportfantast på hemmaplan.",
+        "desc": "Nyfiken och otålig utvecklare (fullstack javascript, web, mobil) som älskar att bygga grymma, användbara system och hjälpa andra göra detsamma. På fritiden kodar jag gärna ännu mer, men gillar även att umgås med fru, barn och vänner och titta på sport. :)",
         "phone": "0702-662106",
         "blog": "http://thecuriousdeveloper.com",
         "services": [{
